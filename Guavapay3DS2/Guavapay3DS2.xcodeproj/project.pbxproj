@@ -1,0 +1,2010 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01706B4660728A5BFAC12840 /* GPTDSRuntimeException.m in Sources */ = {isa = PBXBuildFile; fileRef = CD33421F13A675DCFE597FFB /* GPTDSRuntimeException.m */; };
+		05647ABCFBDBE1209D5044AC /* GPTDSEphemeralKeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D521B45783D36C8E83F0EA /* GPTDSEphemeralKeyPair.m */; };
+		0615DD02C0B022AE207DADF0 /* GPTDSUICustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = 210B22FF4DCB0C6E7C763EAB /* GPTDSUICustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		081347606D48F64161D95B45 /* mastercard.der in Resources */ = {isa = PBXBuildFile; fileRef = 1104D5855D28E49E104CA004 /* mastercard.der */; };
+		089DAFECA444861762781974 /* NSError+Guavapay3DS2.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C20D4B77372845627D6466 /* NSError+Guavapay3DS2.m */; };
+		08ECC7E70E7478E76793ED1E /* UIViewController+Guavapay3DS2.m in Sources */ = {isa = PBXBuildFile; fileRef = 99451064136843047C7881AD /* UIViewController+Guavapay3DS2.m */; };
+		09DFAF7B38EAB76BC66AC9C8 /* GPTDSChallengeResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CE086326AF3DE336BF4F4C /* GPTDSChallengeResponseObject.m */; };
+		09F0B1945CC12FB1215119FD /* GPTDSProcessingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95641ECBE1AE1CC198013405 /* GPTDSProcessingView.h */; };
+		0A2BC6A9E388B242C46C09D9 /* UIButton+CustomInitialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD55BECC3FB85216FE46218 /* UIButton+CustomInitialization.h */; };
+		0BA0F0CADC4CFF419E1F7EFC /* GPTDSLabelCustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6932DD26C7C16938DFA0E198 /* GPTDSLabelCustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D3D9C95CB14A610EAAAEF6E /* GPTDSJSONEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0681C043F732148587737233 /* GPTDSJSONEncoder.m */; };
+		0D4B42EC5019D213BDBC84E7 /* NSDictionary+DecodingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C566D6E444FCA4BCEC65F3D2 /* NSDictionary+DecodingHelpers.m */; };
+		0EEFDE04392FD017EA0A017A /* GPTDSDeviceInformationParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C7D18868DDADEF4CB6220C /* GPTDSDeviceInformationParameter.m */; };
+		1134F81C7D015BA5EA52BFD1 /* NSDictionary+DecodingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = C78AA1D7AD2BAB52EE58D078 /* NSDictionary+DecodingHelpers.h */; };
+		1156B25EBE0135B627E174D2 /* GPTDSProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84967ED0D9B206B3F5AA4F02 /* GPTDSProgressViewController.m */; };
+		125427F1322501AA12EAEBE6 /* visa.der in Resources */ = {isa = PBXBuildFile; fileRef = A70071543985284E0D9DAC64 /* visa.der */; };
+		136255493F3F0E930FBA8606 /* GPTDSImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A89BBE7360F93195641C9 /* GPTDSImageLoader.m */; };
+		1469551DB874336B68F6C39D /* Guavapay3DS2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4030C50383B488C97F4B56 /* Guavapay3DS2.framework */; };
+		149FE0C2910F08910B250BD8 /* GPTDSException+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 461F938CDE7ED6D06D9D2700 /* GPTDSException+Internal.h */; };
+		14BDBD98F8E15576403255C9 /* GPTDSChallengeInformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24777EE9931075405F370DB /* GPTDSChallengeInformationView.m */; };
+		15D4A2F07EA477B84CD48B15 /* GPTDSRuntimeErrorEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7D85369E012B15702D8DF9 /* GPTDSRuntimeErrorEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1767509FDC216602A5E43F0E /* GPTDSErrorMessageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F2C40987F5218BD031E3D /* GPTDSErrorMessageTest.m */; };
+		1B20B454D0C309613A1FAF68 /* GPTDSThreeDSProtocolVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC648332A706809F1BDFD59 /* GPTDSThreeDSProtocolVersion.m */; };
+		206B93BDE91CFED74A053B87 /* GPTDSStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = B7AE3B4732D203134FE096FE /* GPTDSStackView.h */; };
+		2086DFD1FC02783FB106AD35 /* UIColor+DefaultColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 869733153BCA6BE2EB7A452F /* UIColor+DefaultColors.m */; };
+		2224463CE5FB99D4BEE6A479 /* GPTDSJSONEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C5207432FB07BD71703BCC /* GPTDSJSONEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24D49F833E1ED28DE557F219 /* GPTDSException.h in Headers */ = {isa = PBXBuildFile; fileRef = B71A1C110DCC23A9CE929837 /* GPTDSException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F626CD0F93B7AF59B1D6AA /* GPTDSThreeDS2Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 77646CEC7EE754F47EDBDA4F /* GPTDSThreeDS2Service.m */; };
+		27F3EA1BB7E7B56A1A8524BA /* UIColor+ThirteenSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8B0001705400C661678617 /* UIColor+ThirteenSupport.h */; };
+		284F72D3FD8C06C0E5974086 /* GPTDSTextFieldCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163B5E9598CA3A298920B9 /* GPTDSTextFieldCustomization.m */; };
+		28AD7EC6F6DA2AECD7F61BA7 /* NSLayoutConstraint+LayoutSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = E0949399E96663964091C0EF /* NSLayoutConstraint+LayoutSupport.h */; };
+		2938D9CC41899DC78D01EF9F /* GPTDSDeviceInformationParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 172AF5C85EDBD92A1030E361 /* GPTDSDeviceInformationParameter.h */; };
+		2970D4880EBFAEFABA2E8EBD /* GPTDSChallengeRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 60693BC560C4927ACFD2E6C3 /* GPTDSChallengeRequestParameters.m */; };
+		2AB06EC20B22306F1DDF9F4B /* GPTDSChallengeResponseImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9F828840A3B361842E38DE /* GPTDSChallengeResponseImageObject.m */; };
+		2B09B7FDF8C4AA551F7EE18E /* GPTDSDeviceInformationParameterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC52C3C844BDA981EE34BAB9 /* GPTDSDeviceInformationParameterTests.m */; };
+		2B2787A7103C0D0AB5F00B78 /* GPTDSAuthenticationResponseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 138E82072FC6572612A8E248 /* GPTDSAuthenticationResponseObject.h */; };
+		2BBA82878804711E06CBFCCB /* GPTDSErrorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 645D0BB927B7F8A0D37EE04D /* GPTDSErrorMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C5621AABECF6192F92A20CF /* GPTDSGuavapay3DS2Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4376BB07FD1EE783249AED /* GPTDSGuavapay3DS2Error.m */; };
+		2C6DB6516699B4EFADDF3360 /* GPTDSRuntimeException.h in Headers */ = {isa = PBXBuildFile; fileRef = B8619CA38E2A5B49DBF8546B /* GPTDSRuntimeException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB6DF5CCCBC1EB9ABD03143 /* GPTDSNotInitializedException.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCABBF51CBA7F9FEF757B4C /* GPTDSNotInitializedException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D42EA44FC01C834209CFED4 /* Guavapay3DS2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1CB633CA5917B2168BB928 /* Guavapay3DS2.xcassets */; };
+		2E2022723BC7A4B2DD5ECE76 /* GPTDSErrorMessage+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB591796654445B8434A501 /* GPTDSErrorMessage+Internal.m */; };
+		30632F7C730BF8D23B607CF7 /* GPTDSWarningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 474F39AA3F47D84F8D54E5B7 /* GPTDSWarningTests.m */; };
+		30B25163BEDEB99CDD101B5F /* NSString+EmptyChecking.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A77DB1C711B8696B2E5FEF /* NSString+EmptyChecking.h */; };
+		310E6B542C52C9EF006A03EC /* 150-issuer.png in Resources */ = {isa = PBXBuildFile; fileRef = 310E6B4E2C52C9EF006A03EC /* 150-issuer.png */; };
+		310E6B552C52C9EF006A03EC /* 300-issuer.png in Resources */ = {isa = PBXBuildFile; fileRef = 310E6B4F2C52C9EF006A03EC /* 300-issuer.png */; };
+		310E6B562C52C9EF006A03EC /* 150-payment.png in Resources */ = {isa = PBXBuildFile; fileRef = 310E6B502C52C9EF006A03EC /* 150-payment.png */; };
+		310E6B572C52C9EF006A03EC /* 300-payment.png in Resources */ = {isa = PBXBuildFile; fileRef = 310E6B512C52C9EF006A03EC /* 300-payment.png */; };
+		310E6B582C52C9EF006A03EC /* 450-issuer.png in Resources */ = {isa = PBXBuildFile; fileRef = 310E6B522C52C9EF006A03EC /* 450-issuer.png */; };
+		310E6B592C52C9EF006A03EC /* 450-payment.png in Resources */ = {isa = PBXBuildFile; fileRef = 310E6B532C52C9EF006A03EC /* 450-payment.png */; };
+		3192FCC841152A7E5E6F19D6 /* GPTDSAlreadyInitializedException.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FD11407319293954C6D81 /* GPTDSAlreadyInitializedException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		319DD1C82B0D50FF0083BA32 /* GPTDSVisionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 319DD1C72B0D50F80083BA32 /* GPTDSVisionSupport.h */; };
+		31C636A25BF83316EE7EB57D /* GPTDSThreeDS2Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAA444FA7C82BDA4AD907BF /* GPTDSThreeDS2Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31CDFC322BA8E58100B3DD91 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 31CDFC312BA8E58100B3DD91 /* PrivacyInfo.xcprivacy */; };
+		326AD1DD7BB8A2A6DA66EC67 /* GPTDSThreeDSProtocolVersion+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C29E9F3D2A62676B424CD1 /* GPTDSThreeDSProtocolVersion+Private.h */; };
+		32BE38D04DD76CA4490389C6 /* GPTDSConfigParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F551808E65CDADD9B3A9CB8 /* GPTDSConfigParametersTests.m */; };
+		3343DA94A5032627843A343C /* GPTDSEphemeralKeyPair+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D6E4F76CBA258163E57DF3 /* GPTDSEphemeralKeyPair+Testing.h */; };
+		335553A547A3CA80B3901CCF /* GPTDSGuavapay3DS2Error.h in Headers */ = {isa = PBXBuildFile; fileRef = AE53BAA72835AFA3B35C58D3 /* GPTDSGuavapay3DS2Error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34256504F0E0E519D586B7CE /* GPTDSErrorMessage+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5463EB1CC8E85BE3BD12DEFF /* GPTDSErrorMessage+Internal.h */; };
+		3617B07ABD719F1A5F8302FA /* NSError+Guavapay3DS2.h in Headers */ = {isa = PBXBuildFile; fileRef = A6778F8CE36F769DF608F932 /* NSError+Guavapay3DS2.h */; };
+		3844F0E21742F43BCB32499A /* GPTDSDeviceInformationParameter+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4869D6E14F01EDB960CB3065 /* GPTDSDeviceInformationParameter+Private.h */; };
+		390691CA0EAF81418B0C65DB /* UIView+LayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0F0485B7048DDAA7DA8F9B /* UIView+LayoutSupport.m */; };
+		3909D8028AC485BCCF17B48B /* GPTDSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6269F8B91341C387A911DB /* GPTDSStackView.m */; };
+		3AD384AE2C76634D009AB784 /* GPTDSAnalyticsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD384AD2C76634D009AB784 /* GPTDSAnalyticsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B430F172A3AD6AA9AFDFC04 /* GPTDSNavigationBarCustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1630D876436E43547FF69CE /* GPTDSNavigationBarCustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C6D16D8E7B5BC865D956A0B /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 0118969F6608A92583CC6C98 /* iOSSnapshotTestCase */; };
+		3C88AE37A760B91E93D423CF /* GPTDSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F030410FDABFF833CD8FE46 /* GPTDSException.m */; };
+		3C8C3BCDDDDEF6B9E150D4E1 /* GPTDSChallengeResponseSelectionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 52EEBC7D74623E1A1D7E3219 /* GPTDSChallengeResponseSelectionInfo.h */; };
+		3D674B4EE5ABACD65EB21A1E /* discover.der in Resources */ = {isa = PBXBuildFile; fileRef = 04AB48F014A8D5BA56FEF463 /* discover.der */; };
+		3F2624C33291FCE00D596768 /* GPTDSDeviceInformationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9580A82A59EB2B0103EDF47A /* GPTDSDeviceInformationManager.m */; };
+		3F30A8F418870D176A626F00 /* GPTDSSpacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E4A57094A671EB14380882 /* GPTDSSpacerView.m */; };
+		41246FCC0695BABE1489C53E /* UIViewController+Guavapay3DS2.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F72413F99F8E50FD0FA085D /* UIViewController+Guavapay3DS2.h */; };
+		4142A3AB3E384F91A1E5550B /* GPTDSExpandableInformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1BBF3A441B1F782B766F61 /* GPTDSExpandableInformationView.m */; };
+		425849564519D6454DDA3424 /* NSData+JWEHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B05A609753EE71502409082 /* NSData+JWEHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		435EFC9119D4B42B2C6A6F88 /* GPTDSAuthenticationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA4AB3BA2FB41B3D5F38978 /* GPTDSAuthenticationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4518AD83580FC222B883DAFB /* GPTDSSimulatorChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D60BDF245487FE3362BE07 /* GPTDSSimulatorChecker.m */; };
+		458BC5A3D0E7B4D05549474F /* GPTDSBrandingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFAC8D74AFFC2E61BAD82A5 /* GPTDSBrandingView.h */; };
+		480CD62EC91F4796D1D8D8DC /* GPTDSSecTypeUtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D22985091381DFCDF077E9 /* GPTDSSecTypeUtilitiesTests.m */; };
+		48316C1AB1D9151C205A59A4 /* GPTDSChallengeResponseMessageExtensionObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAC56EDE0AAD2E50E02E9AE /* GPTDSChallengeResponseMessageExtensionObject.h */; };
+		4A9423CC79312BC3A0DEC38B /* GPTDSChallengeRequestParametersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD29E57D206B5D6BAF9099 /* GPTDSChallengeRequestParametersTest.m */; };
+		4C0E13298F08D391FE8600CF /* GPTDSJSONWebSignatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C668442518B446D573AD24 /* GPTDSJSONWebSignatureTests.m */; };
+		4C267E9A30ADC18E71408ED5 /* GPTDSTextFieldCustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = 68ED2A0E11E1B27980E0C60A /* GPTDSTextFieldCustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C573A44AB0A9CB28D76C621 /* GPTDSJSONWebEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 76EA9DF8572C992E30BCF8A3 /* GPTDSJSONWebEncryption.h */; };
+		4D73C2FBAC9B96ECB45BDC94 /* Guavapay3DS2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4030C50383B488C97F4B56 /* Guavapay3DS2.framework */; };
+		4D79F0CFC54E8B923E9238CF /* Guavapay3DS2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4030C50383B488C97F4B56 /* Guavapay3DS2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E35267801D94FB84816C519 /* GPTDSInvalidInputException.h in Headers */ = {isa = PBXBuildFile; fileRef = 853A361AB630A2BD402D1B47 /* GPTDSInvalidInputException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E4E4BC1E2D041FA530336EE /* GPTDSSwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9946D28A86E85A6C84EB6C7B /* GPTDSSwiftTryCatch.m */; };
+		4FE8C076102C195D609977F5 /* GPTDSChallengeSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D460893CB5DDE52AA0AB85 /* GPTDSChallengeSelectionView.m */; };
+		511513A9180F9835B08CBE56 /* GPTDSProgressViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E629F85B783E42244E37DFA9 /* GPTDSProgressViewController.h */; };
+		574A7976213046F02F7F60C4 /* GPTDSProcessingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1C5F6F1311F50D9C37291 /* GPTDSProcessingView.m */; };
+		57E58A3B88D9EEB9FAE9B383 /* GPTDSDeviceInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBE88F6E2C3153A8315EDC6 /* GPTDSDeviceInformation.h */; };
+		59756023104E4FB886B48936 /* GPTDSTextChallengeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 82C41E6DC2CC247ECC17F2B9 /* GPTDSTextChallengeView.h */; };
+		5B16918BF5F67B0F5FB1AFD5 /* ARes.json in Resources */ = {isa = PBXBuildFile; fileRef = 237977B021FE538E5E4FA35C /* ARes.json */; };
+		5C83A3A4631E51EEECBEAA0F /* GPTDSEllipticCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5049A72A6BEB558D8559A5EB /* GPTDSEllipticCurvePoint.h */; };
+		5DAC25EBAB19555229654E44 /* GPTDSAuthenticationResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E32DA72CAFBF2AF8099151 /* GPTDSAuthenticationResponseTests.m */; };
+		5FE5FB933E2651C8D84FA477 /* GPTDSAuthenticationResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5043E1CF6955176EC3D43F88 /* GPTDSAuthenticationResponseObject.m */; };
+		602C526C0B52DF81846DA664 /* GPTDSOSVersionChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F363439353A6DD554FC44AC2 /* GPTDSOSVersionChecker.m */; };
+		613EF855524F7861A6DDD8C1 /* GPTDSImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC649704CDDA50E73DB3C10 /* GPTDSImageLoader.h */; };
+		63AFB3C739DD987EE56F801F /* GPTDSDirectoryServerCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 069990DA025BE9F33602E96A /* GPTDSDirectoryServerCertificate.h */; };
+		64D05353B50FAF3BB76D6527 /* GPTDSRuntimeErrorEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1501A7A3010FFE53D00E318F /* GPTDSRuntimeErrorEvent.m */; };
+		67D431374DECE36B2606D944 /* GPTDSProtocolErrorEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6D20D1DAB7D769E5E97528 /* GPTDSProtocolErrorEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F314D63323954EFE309E49 /* GPTDSOSVersionChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE7026135B5049B732CEDEB /* GPTDSOSVersionChecker.h */; };
+		6B3AA85EE71FC42EF9BD999F /* GPTDSEllipticCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5AA537586EF706E4056FD /* GPTDSEllipticCurvePoint.m */; };
+		6BA3F565B6C0B78F6DED8826 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F31A6580385C6390910AFD93 /* Localizable.strings */; };
+		6DB54DBAEFD08967367B6BF7 /* GPTDSChallengeParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C929BF760735CC01E1E8F5 /* GPTDSChallengeParameters.m */; };
+		6E727D2B738D7A3527952D28 /* GPTDSTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDE2481364C454058BF2377 /* GPTDSTransaction.m */; };
+		72F430506E684D61BD5CFE3B /* GPTDSChallengeStatusReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A75140FB62A71261CAF5EC /* GPTDSChallengeStatusReceiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7337FB20DC0EF491B5922913 /* GPTDSChallengeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 315AEE1534F9D9974DC1674B /* GPTDSChallengeResponse.h */; };
+		75150C4678B8207AA6E7D969 /* GPTDSBrandingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C39A42ECBA58571EFA03C5 /* GPTDSBrandingView.m */; };
+		75CDFDABD7F9813563E3F618 /* Guavapay3DS2-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F024DEAD6628A0229856656 /* Guavapay3DS2-Bridging-Header.h */; };
+		793D61AD55630DD336A141A7 /* GPTDSChallengeResponseMessageExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8BE982004398CF8AAA7D1E /* GPTDSChallengeResponseMessageExtension.h */; };
+		79557307ECD48D17C566997A /* GPTDSFooterCustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = BA96C9FFA48B85F9C42E8C68 /* GPTDSFooterCustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C20B044ACFD3A50FD4AC9A8 /* acs_challenge.html in Resources */ = {isa = PBXBuildFile; fileRef = 7971EB56716D5E2F59053B6D /* acs_challenge.html */; };
+		7C7073B54628ED836F422F1D /* GPTDSJailbreakChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 94943BEAB94E949AF9830EFA /* GPTDSJailbreakChecker.h */; };
+		7EC8E5523F29B0F01FE827DB /* GPTDSWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 581EEE576D24047004C828DF /* GPTDSWebView.h */; };
+		7ED98325E7E54A54BFE54D6C /* GPTDSAuthenticationRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AB871F64FC72EBC7A91F96C1 /* GPTDSAuthenticationRequestParameters.m */; };
+		81B1C12449852CEB3C59793F /* ul-test.der in Resources */ = {isa = PBXBuildFile; fileRef = B6275E7099E55F0C04688890 /* ul-test.der */; };
+		8233B9F131602DD7143FF96F /* GPTDSBundleLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9564F43EF7CF4F60C3C202CD /* GPTDSBundleLocator.m */; };
+		825ACBE0734BDCE746E66AB0 /* GPTDSWhitelistView.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CEADC8006E456FD82CE134 /* GPTDSWhitelistView.h */; };
+		8322973CD09F2E1C88B6046E /* UIColor+DefaultColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A567E08748C86FCE2A75FEA /* UIColor+DefaultColors.h */; };
+		83878337274D8C43D492EC45 /* GPTDSUICustomizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3154597040B803ADE14F9E /* GPTDSUICustomizationTests.m */; };
+		847926A68A88BEB58C92D9BC /* GPTDSThreeDSProtocolVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6A9565E97DF2544254AA94 /* GPTDSThreeDSProtocolVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85093DF52DC27DA300328311 /* GPTDSPackedSDKChallengeParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 85093DF42DC27D9E00328311 /* GPTDSPackedSDKChallengeParameters.m */; };
+		85093DF72DC27E0F00328311 /* GPTDSPackedSDKChallengeParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 85093DF62DC27E0A00328311 /* GPTDSPackedSDKChallengeParameters.h */; };
+		850F4D542DAD26FD00244BBF /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4D532DAD26FD00244BBF /* DemoViewController.swift */; };
+		850F4D562DAD28E500244BBF /* DemoViewController+TestObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F4D552DAD28E500244BBF /* DemoViewController+TestObjects.swift */; };
+		852649392DB66FE300C56781 /* CardFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852649382DB66FE300C56781 /* CardFormView.swift */; };
+		8526493F2DB675AC00C56781 /* DemoFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526493E2DB675A200C56781 /* DemoFlowViewController.swift */; };
+		852649412DB67B3100C56781 /* UIViewController+Snackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852649402DB67B3100C56781 /* UIViewController+Snackbar.swift */; };
+		852649432DB67C7B00C56781 /* UIButton+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852649422DB67C7B00C56781 /* UIButton+Loading.swift */; };
+		8526494A2DB6829700C56781 /* PaymentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852649492DB6828D00C56781 /* PaymentDetailsView.swift */; };
+		8528BC572DAFB568003D4C50 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 8528BC562DAFB568003D4C50 /* iOSSnapshotTestCase */; };
+		8528BC592DAFB6F5003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528BC582DAFB6E9003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift */; };
+		852F7BF02DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852F7BEF2DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets */; };
+		85526F302DD1DFB5005DB15E /* ChallengeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85526F2F2DD1DFB5005DB15E /* ChallengeType.swift */; };
+		85742C4D2DAD65A000690F70 /* JSONDecoder+ISODate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85742C4C2DAD65A000690F70 /* JSONDecoder+ISODate.swift */; };
+		858519BF2E03126D000C6FCE /* Data+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858519BB2E031013000C6FCE /* Data+Base64.swift */; };
+		858519C02E031294000C6FCE /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594EC852E03069900DBF99C /* String+Base64.swift */; };
+		858519C12E03129A000C6FCE /* String+JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594EC872E03072100DBF99C /* String+JWT.swift */; };
+		859177F72DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 859177F52DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.h */; };
+		859177F82DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859177F62DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.m */; };
+		8596AB4F2DAFF7B2004C44BD /* GetOrderDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8596AB4E2DAFF799004C44BD /* GetOrderDTO.swift */; };
+		8596AB532DAFF81B004C44BD /* PostExecuteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8596AB502DAFF81B004C44BD /* PostExecuteDTO.swift */; };
+		8596AB542DAFF81B004C44BD /* PostOrderDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8596AB522DAFF81B004C44BD /* PostOrderDTO.swift */; };
+		8596AB552DAFF81B004C44BD /* ExecuteErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8596AB512DAFF81B004C44BD /* ExecuteErrorDTO.swift */; };
+		85A1EA392DC9170E0097FADD /* GPTDSChallengeResponseViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A1EA382DC9170E0097FADD /* GPTDSChallengeResponseViewControllerDelegate.h */; };
+		85A1EA3B2DCA4DE40097FADD /* PutPaymentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A1EA3A2DCA4DE40097FADD /* PutPaymentDTO.swift */; };
+		85A1EA3D2DCA64160097FADD /* DemoFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A1EA3C2DCA64160097FADD /* DemoFlowView.swift */; };
+		85A1EA3F2DCA754C0097FADD /* GPTDSErrorBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A1EA3E2DCA753A0097FADD /* GPTDSErrorBannerView.h */; };
+		85A1EA412DCA75530097FADD /* GPTDSErrorBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A1EA402DCA75510097FADD /* GPTDSErrorBannerView.m */; };
+		85B03E422DC0C32000EECD0C /* DemoFlowViewController+GPTDSChallengeResponseViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B03E412DC0C32000EECD0C /* DemoFlowViewController+GPTDSChallengeResponseViewControllerDelegate.swift */; };
+		85B03E442DC0C37600EECD0C /* DemoFlowViewController+GPTDSChallengeStatusReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B03E432DC0C37600EECD0C /* DemoFlowViewController+GPTDSChallengeStatusReceiver.swift */; };
+		85B03E462DC0C3BC00EECD0C /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B03E452DC0C3BC00EECD0C /* Step.swift */; };
+		85B03E482DC0CEFA00EECD0C /* DemoFlowViewController+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B03E472DC0CEF800EECD0C /* DemoFlowViewController+Constants.swift */; };
+		85B03E4A2DC0CFE600EECD0C /* DemoFlowViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B03E492DC0CFE300EECD0C /* DemoFlowViewController+Helpers.swift */; };
+		85C621F32DAD24170045185C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C621F22DAD24170045185C /* AppDelegate.swift */; };
+		85D3C5B72DD39838004D61E8 /* GPTDSPackedSDKChallengeParametersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D3C5B62DD39832004D61E8 /* GPTDSPackedSDKChallengeParametersTest.m */; };
+		85EF60E22DB78E0F00AD887B /* GPTDSResendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF60E12DB78E0F00AD887B /* GPTDSResendButton.m */; };
+		85EF60E42DB78ED500AD887B /* GPTDSResendButton.h in Sources */ = {isa = PBXBuildFile; fileRef = 85EF60E32DB78ED500AD887B /* GPTDSResendButton.h */; };
+		88197445522F39DB1E9F6AE7 /* NSString+JWEHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8F416E4F4CEA34391481 /* NSString+JWEHelpers.m */; };
+		884D59AF7FD70889276AFC02 /* GPTDSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA85BC717C46C1B95AF8C1E3 /* GPTDSWebView.m */; };
+		890E22971E6F7B0FA1C8D649 /* GPTDSJSONEncodable.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A3C5D4C46E681B7D76B2BA /* GPTDSJSONEncodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		893713F4464A88FAB92BC2C6 /* Guavapay3DS2.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C6B4F6BA431B9342970FD6 /* Guavapay3DS2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A0872706BF4CDE72EF0C480 /* GPTDSConfigParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5ED899439D1C1054CB448 /* GPTDSConfigParameters.m */; };
+		8A64AFBB2AC15E0E0F57ED25 /* GPTDSNotInitializedException.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BD1E24EA9427121E148DFC /* GPTDSNotInitializedException.m */; };
+		8C9BD4B150F384111CBD3BD3 /* GPTDSErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB6222A2EF31FDB7592368 /* GPTDSErrorMessage.m */; };
+		8E0501C3BB849C2D2D99F34E /* GPTDSLocalizedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E0F638E776A7F3456BDA3E /* GPTDSLocalizedString.h */; };
+		8E27285FE76F8BECFD70286D /* GPTDSCompletionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 10DB3CD8F2541AC06681F2C8 /* GPTDSCompletionEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E833B7FCBC3A99072582FEA /* UIFont+DefaultFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E844798B2733C8511AC080E /* UIFont+DefaultFonts.h */; };
+		9146B2E3B89EF3F489D7E233 /* GPTDSIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00E968CF4DD07FB8BF2AAA /* GPTDSIPAddress.m */; };
+		955CBE0C979291F89567D8A7 /* GPTDSJSONWebEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 99392D3F702EC6BF7CE15291 /* GPTDSJSONWebEncryption.m */; };
+		95A2D58051AADDBE16CCA0B6 /* GPTDSChallengeResponseImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C45EE3433B731253E21E24 /* GPTDSChallengeResponseImage.h */; };
+		9673946B78A7763070E05CD0 /* GPTDSAuthenticationRequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = C91B239583899192C7B26FCF /* GPTDSAuthenticationRequestParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97CE8B57A97D037E977E62F3 /* GPTDSBundleLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = A137A31BEFCCB646FB754EE2 /* GPTDSBundleLocator.h */; };
+		98075195759ABB91B0D19847 /* GPTDSJSONWebEncryptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97505E93BE83F233E69BB5A9 /* GPTDSJSONWebEncryptionTests.m */; };
+		9843F6AABF7B0A623E7DF979 /* GPTDSDeviceInformationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A637DA708BC866C2903E0EA /* GPTDSDeviceInformationManager.h */; };
+		987347CA74818CEB716B9DB3 /* UIFont+DefaultFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 634095EA97A4E48BF7CAA03F /* UIFont+DefaultFonts.m */; };
+		9B32E9A4CD2BDA61C730F5EB /* GPTDSJSONDecodable.h in Headers */ = {isa = PBXBuildFile; fileRef = B219360BFB325779485BF702 /* GPTDSJSONDecodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B7081D378D1441B98B81207 /* GPTDSTransactionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A3CCBE9A2E8C1A73D8214E /* GPTDSTransactionTest.m */; };
+		9C225B9C556C20D1A6F97180 /* GPTDSChallengeResponseSelectionInfoObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCA15E0819F9A9D89FEF9EA /* GPTDSChallengeResponseSelectionInfoObject.h */; };
+		9DC5612697835A383DC6606E /* GPTDSTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = F40CC91AA69F5296B0AA985C /* GPTDSTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E46777893FA2D6691F496D7 /* GPTDSChallengeResponseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E45303DCFFDC390971E6E122 /* GPTDSChallengeResponseViewController.h */; };
+		9ED9C602C10682CD5DD91C12 /* NSLayoutConstraint+LayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F99B290CF2B4987A4CFE5DCE /* NSLayoutConstraint+LayoutSupport.m */; };
+		9F0F6085FBD892BF5F14CF86 /* GPTDSWarning.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEB5006261C5E070FEE62BF /* GPTDSWarning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F52F67A1A3A2199AEA598FC /* GPTDSEllipticCurvePointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA1EE83D91993BCAF13EC72 /* GPTDSEllipticCurvePointTests.m */; };
+		9F9BB9E7FA18FEDA44F7042E /* GPTDSDirectoryServerCertificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9754FA4F3CC6AA921787916B /* GPTDSDirectoryServerCertificate.m */; };
+		A026717FFF299A7C1C51565F /* UIView+LayoutSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CB2B66DBD356B5D222EDA9 /* UIView+LayoutSupport.h */; };
+		A33A549CF12209280E3B1DBA /* GPTDSAuthenticationRequestParametersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 969DE2FA3845BB7939D3CD2E /* GPTDSAuthenticationRequestParametersTest.m */; };
+		A4CFDBFC3099BD7E1A694E3E /* UIButton+CustomInitialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29B74DD3963B1205AA1C0C /* UIButton+CustomInitialization.m */; };
+		A5193DADCD0F48911F775D88 /* NSString+JWEHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 018F4AA25D84E9CBD2546BB5 /* NSString+JWEHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A56AE2CD941D7ADAC7FC8BCC /* GPTDSBase64URLEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E3760B1369DB1A33C9DFE /* GPTDSBase64URLEncodingTests.m */; };
+		A6909D6C1A68963504733939 /* GPTDSDebuggerChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = C29F78CC37253B0D33FF86F2 /* GPTDSDebuggerChecker.m */; };
+		A78F19DA3D146A258FB9DE3C /* GPTDSACSNetworkingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D827473D1858B2BED85BDFA1 /* GPTDSACSNetworkingManager.h */; };
+		A8A86B9BCE9702D74E0D2DB6 /* Guavapay3DS2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4030C50383B488C97F4B56 /* Guavapay3DS2.framework */; };
+		A8CAD8276ED8057A760147CB /* NSData+JWEHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC15225A5E83948EF546B71 /* NSData+JWEHelpers.m */; };
+		A97E1DF84D381952A0FB4C1C /* amex.der in Resources */ = {isa = PBXBuildFile; fileRef = D8B7EE0F935EF44EB2EF7D45 /* amex.der */; };
+		AA4D157F31A246890D446981 /* GPTDSChallengeResponseSelectionInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F046DE266BAAE3DA0AC43785 /* GPTDSChallengeResponseSelectionInfoObject.m */; };
+		AA94519687902E34E5243AEA /* GPTDSSpacerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 72DBE992B33F45C059EDB597 /* GPTDSSpacerView.h */; };
+		AC474013841CE1DED97F3FA8 /* GPTDSSimulatorChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = A0ADFB365AD2DE9E84873BB1 /* GPTDSSimulatorChecker.h */; };
+		AE1894FEA510AC394DE73C4B /* GPTDSTransaction+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9F5C315222AFCD14C9342F /* GPTDSTransaction+Private.h */; };
+		B1C2AA6259CE34B0042A1FB1 /* GPTDSDeviceInformationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4050F381183D6FDCC990D01 /* GPTDSDeviceInformationManagerTests.m */; };
+		B31168F5FEC3464AC212DB85 /* GPTDSACSNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6004F2D9880055C0C0BCF1 /* GPTDSACSNetworkingManager.m */; };
+		B426123CC7FCA337E13304F9 /* NSDictionary+DecodingHelpersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8BF51F49E161737406B3A /* NSDictionary+DecodingHelpersTest.m */; };
+		B51D1C218F460F67B58A1F0D /* GPTDSProtocolErrorEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3255706D2304FB551C97305F /* GPTDSProtocolErrorEvent.m */; };
+		B94E5A5BF5F22998E4CA9ED3 /* GPTDSEphemeralKeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 20533E2C69C4B80BB33A4766 /* GPTDSEphemeralKeyPair.h */; };
+		B9A456E52E62E9DAE9F424A7 /* GPTDSChallengeResponseMessageExtensionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D02FAFC403BC901931A629F /* GPTDSChallengeResponseMessageExtensionObject.m */; };
+		BA00D11D792C99B7D5749F59 /* GPTDSJailbreakChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBB92DBE97E16DE9D18B4A /* GPTDSJailbreakChecker.m */; };
+		BA65731CDB75C3124834586C /* GPTDSSynchronousLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F02456AB660E709F332C0C7D /* GPTDSSynchronousLocationManagerTests.m */; };
+		BB379E68231A7DA62F87E628 /* GPTDSNavigationBarCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F1A5A8E5922748A9BEC724 /* GPTDSNavigationBarCustomization.m */; };
+		BF06B99FECD98C26F7B64665 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D577934984712C20C5E903 /* XCTest.framework */; };
+		BF2651A9F3A31CB1AFEC44BB /* GPTDSCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E62EC973FC5C9905A40CA8 /* GPTDSCustomization.m */; };
+		BF342613EE89845EB1C4B72A /* GPTDSChallengeRequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 762DEC6662DF8240FE19CFFC /* GPTDSChallengeRequestParameters.h */; };
+		BFC5852E14724750E70DA2A6 /* GPTDSEphemeralKeyPairTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF80634E06E8D6F598CFC667 /* GPTDSEphemeralKeyPairTests.m */; };
+		C2BA2E6ABDD8E80963FFC671 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D577934984712C20C5E903 /* XCTest.framework */; };
+		C430332104547BA508416B41 /* GPTDSButtonCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5489DCAA65624C6F966816B6 /* GPTDSButtonCustomization.m */; };
+		C4BA75544A7F51355BF4B5F8 /* GPTDSDirectoryServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA43E7E90E4002DD56B7C3D /* GPTDSDirectoryServer.h */; };
+		CA617B6F5CDFB8FDEEE38636 /* GPTDSJSONWebSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA2E6DA60350400C5270E08 /* GPTDSJSONWebSignature.h */; };
+		CCC376FE7424029342A8D15E /* GPTDSChallengeResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B064352BB2876CA7266C410A /* GPTDSChallengeResponseViewController.m */; };
+		CEA1EB91858043A837638FE0 /* GPTDSSecTypeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F0E11AA6794BFB1715685E /* GPTDSSecTypeUtilities.h */; };
+		D1427392DA8AD8F5B4118781 /* GPTDSACSNetworkingManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6118F98576E9A39A7292C6C6 /* GPTDSACSNetworkingManagerTest.m */; };
+		D189220981C7705913D93687 /* GPTDSJSONEncoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B49A5CF64DCB23CD0AEDE /* GPTDSJSONEncoderTest.m */; };
+		D3432C5BF5211A60D5C15D9E /* GPTDSIntegrityChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = C02DF839637771684BC57B3A /* GPTDSIntegrityChecker.h */; };
+		D3AA14D1E059E90F5A965CC4 /* GPTDSSelectionCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = 43540AB7D13C0C9A563C3F4D /* GPTDSSelectionCustomization.m */; };
+		D41F091BE1579B801D1BBC20 /* GPTDSSelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B458FCA7DFDBF75E62A43BA1 /* GPTDSSelectionButton.m */; };
+		D5706ACF84F0A993CE1885D4 /* GPTDSTextChallengeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6B6D3CAE363114723472F /* GPTDSTextChallengeView.m */; };
+		D63E3DDC92DD46062A265D86 /* GPTDSChallengeParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2133B61092FE1B478204 /* GPTDSChallengeParametersTests.m */; };
+		D819C341ECEE1EFE6FE66085 /* GPTDSChallengeResponseImageObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F83E51E99D453DF9C2DDE1 /* GPTDSChallengeResponseImageObject.h */; };
+		D83D2FF20387FACC383A2A0F /* GPTDSAlreadyInitializedException.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC486DA2A80A43C1F517B2 /* GPTDSAlreadyInitializedException.m */; };
+		D927789F89B413C08DE4D388 /* GPTDSThreeDS2ServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF8ACC073E814B7DEBA7647 /* GPTDSThreeDS2ServiceTests.m */; };
+		D9F8BA88953A91DC082FA6DA /* GPTDSSelectionButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C4777F15603AC755362BD846 /* GPTDSSelectionButton.h */; };
+		DB96817598FCE73F5131437E /* GPTDSDirectoryServerCertificate+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B015B937DD3657D62C61CE58 /* GPTDSDirectoryServerCertificate+Internal.h */; };
+		DBDB8B56FFF5C4234705E698 /* GPTDSSecTypeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3DED43BD4E0226BFB0759D /* GPTDSSecTypeUtilities.m */; };
+		DC0D9A57F2E312663C088FB8 /* GPTDSChallengeParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = D03B98D5861739833B197D8F /* GPTDSChallengeParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC32281BF0847A98B100C3A1 /* GPTDSConfigParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BFB8640032796CDA016765 /* GPTDSConfigParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB98914E1135E8D445545C8 /* GPTDSIPAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = A3DFB001DB5BA7F1AFA7353A /* GPTDSIPAddress.h */; };
+		DE32EAA8F5C2645652FCFB48 /* GPTDSSwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E5BC34A661D9080A2EE239F8 /* GPTDSSwiftTryCatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEEF260365A4D9B0D83E557D /* NSString+EmptyChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D309E4FBE7E73D0BB83BF5 /* NSString+EmptyChecking.m */; };
+		DF4D38DC0AF89EAAA8718AAE /* GPTDSUICustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B2474CD1A39D70869B75B /* GPTDSUICustomization.m */; };
+		E0644CE0260178023E643B23 /* GPTDSSynchronousLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DBDDEB5C5DAE2EA8C95CC3 /* GPTDSSynchronousLocationManager.m */; };
+		E08AF96E690D75F6AB52021F /* GPTDSWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = A502CCC5190F6B642EEC0CE6 /* GPTDSWarning.m */; };
+		E19C8104FC1A9BAEA0BE8A9D /* UIColor+ThirteenSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ED28756222539D37554CC7 /* UIColor+ThirteenSupport.m */; };
+		E4DA2CE8DC8C60DE40222185 /* GPTDSDirectoryServerCertificateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA75957DD13FA92FA866AF3 /* GPTDSDirectoryServerCertificateTests.m */; };
+		E630DCBBEFAAD0435BEF989C /* GPTDSDeviceInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B1A52548593FE78D801734 /* GPTDSDeviceInformation.m */; };
+		E70CFDC59731BA62DD89906C /* GPTDSWhitelistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 615F1BD510661B38D6825128 /* GPTDSWhitelistView.m */; };
+		E73028FD4537F6E48F927127 /* NSString+EmptyCheckingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B8822D21AADE7DA51931CC /* NSString+EmptyCheckingTests.m */; };
+		E7A72BB7CC8DE8DA7FA0DEC5 /* ErrorMessage.json in Resources */ = {isa = PBXBuildFile; fileRef = E12798864D5CFFB7157D4CF5 /* ErrorMessage.json */; };
+		E7E424C5264A4DE4A1EC19B6 /* GPTDSChallengeSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = EB910E98EDD6D3E00802793C /* GPTDSChallengeSelectionView.h */; };
+		E90749131EDA0C86BBBFCE5C /* GPTDSChallengeResponseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1BDF12DBD6264C6199FFA7 /* GPTDSChallengeResponseObject.h */; };
+		EA19A7AEC298F3EC010D1199 /* GPTDSTestJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF3235EDD908CC1500399A1 /* GPTDSTestJSONUtils.m */; };
+		EA89021709AFB5F04961EB78 /* cartes-bancaires.der in Resources */ = {isa = PBXBuildFile; fileRef = 83838563F29179FB1E9F2E66 /* cartes-bancaires.der */; };
+		EB791827A943AA61976D8C29 /* GPTDSIntegrityChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = BB065D6900E95C5E90864C16 /* GPTDSIntegrityChecker.m */; };
+		EC51189277D7D68D08C2A65C /* GPTDSButtonCustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = BD94CAE01A17E083E5617E56 /* GPTDSButtonCustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF8755D2602E0E06DCB3210 /* GPTDSChallengeResponseObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E401845EE5759CCD30786AA /* GPTDSChallengeResponseObjectTest.m */; };
+		EE3854BC2A14F87E8D51B0D0 /* GPTDSInvalidInputException.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDAC320458399141EB161E2 /* GPTDSInvalidInputException.m */; };
+		EEE77034728D2CFE38CC5A85 /* GPTDSLabelCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D320CD5ADA49F17B8BC1B0 /* GPTDSLabelCustomization.m */; };
+		EFC72E766F9FD4EE18D309BC /* GPTDSJSONWebSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC6B47C06B522B22EB19FF /* GPTDSJSONWebSignature.m */; };
+		F04482C663F6DF8E522B0833 /* GPTDSCustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF187D1D58405C736474042 /* GPTDSCustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0B9EFD359B1AB28A695CB48 /* GPTDSSynchronousLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C12AE31D386D4A193C00004B /* GPTDSSynchronousLocationManager.h */; };
+		F13A032A4AF15BB61EA18A8D /* GPTDSChallengeInformationView.h in Headers */ = {isa = PBXBuildFile; fileRef = C893FD867C964775E68AE85F /* GPTDSChallengeInformationView.h */; };
+		F28AD6CA8AB1A5DEE7A8F429 /* GPTDSDebuggerChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = D122FAE093BC4F649CC6E7AB /* GPTDSDebuggerChecker.h */; };
+		F2D0DB032D4825C600DA26AD /* HTMLCRes.json in Resources */ = {isa = PBXBuildFile; fileRef = F2D0DB022D4825C600DA26AD /* HTMLCRes.json */; };
+		F35963DB86D90320CFA7BCB9 /* GPTDSExpandableInformationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 939C45AE068CF4F5BEB4C138 /* GPTDSExpandableInformationView.h */; };
+		F4E8353A470750D9BCEA3CD8 /* CRes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C6D262891811FB3FE0C947E /* CRes.json */; };
+		F5513045A25210C524A05DF5 /* GPTDSSelectionCustomization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CD753D9BBFC378C1B491B00 /* GPTDSSelectionCustomization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F569B584D357DC5C55542015 /* GPTDSFooterCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF141AC98F213122D037C6 /* GPTDSFooterCustomization.m */; };
+		FD6456BD86F07C446B9FB6C8 /* ec_test.der in Resources */ = {isa = PBXBuildFile; fileRef = 3E4C02D9D6978AD5C3D7E3D2 /* ec_test.der */; };
+		FD8A81873C3BC7579ED07460 /* GPTDSCompletionEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B71C61CF5ADC7796441F5 /* GPTDSCompletionEvent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35B6793A7F3FB130F40209F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D219187B704575AD3CD3EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5907C55B1F111921112DF2BF;
+			remoteInfo = Guavapay3DS2DemoUI;
+		};
+		52E1EB51359DA6E75D851D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D219187B704575AD3CD3EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57AEC53510AE0DC0539730F3;
+			remoteInfo = Guavapay3DS2;
+		};
+		6C355B127D670833C76237D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D219187B704575AD3CD3EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57AEC53510AE0DC0539730F3;
+			remoteInfo = Guavapay3DS2;
+		};
+		947ED275EAB25AD4CD701936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D219187B704575AD3CD3EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57AEC53510AE0DC0539730F3;
+			remoteInfo = Guavapay3DS2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00E415680C602ED1D6D8E71F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D79F0CFC54E8B923E9238CF /* Guavapay3DS2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B749EC915FB6D2FF5ABEE0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FA2FE74AE67CD3CDAFD7E5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726DD7176204D90BD7552B84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00658E077ECB223C90484AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		018F4AA25D84E9CBD2546BB5 /* NSString+JWEHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JWEHelpers.h"; sourceTree = "<group>"; };
+		01D320CD5ADA49F17B8BC1B0 /* GPTDSLabelCustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSLabelCustomization.m; sourceTree = "<group>"; };
+		02D762271DBCC1AE80E0F9D4 /* Guavapay3DS2DemoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guavapay3DS2DemoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		037C294011A01E4B4DCE5BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04AB48F014A8D5BA56FEF463 /* discover.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = discover.der; sourceTree = "<group>"; };
+		04E6B6D3CAE363114723472F /* GPTDSTextChallengeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSTextChallengeView.m; sourceTree = "<group>"; };
+		0681C043F732148587737233 /* GPTDSJSONEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSJSONEncoder.m; sourceTree = "<group>"; };
+		069990DA025BE9F33602E96A /* GPTDSDirectoryServerCertificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSDirectoryServerCertificate.h; sourceTree = "<group>"; };
+		06C5207432FB07BD71703BCC /* GPTDSJSONEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSJSONEncoder.h; sourceTree = "<group>"; };
+		08D577934984712C20C5E903 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0BEB5006261C5E070FEE62BF /* GPTDSWarning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSWarning.h; sourceTree = "<group>"; };
+		0DA1EE83D91993BCAF13EC72 /* GPTDSEllipticCurvePointTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSEllipticCurvePointTests.m; sourceTree = "<group>"; };
+		0E38A775DB9F529427E900CF /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0E3C05BE55CF3086738AA182 /* Guavapay3DS2DemoUITests-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2DemoUITests-Debug.xcconfig"; sourceTree = "<group>"; };
+		0F024DEAD6628A0229856656 /* Guavapay3DS2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guavapay3DS2-Bridging-Header.h"; sourceTree = "<group>"; };
+		10C45EE3433B731253E21E24 /* GPTDSChallengeResponseImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseImage.h; sourceTree = "<group>"; };
+		10DB3CD8F2541AC06681F2C8 /* GPTDSCompletionEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSCompletionEvent.h; sourceTree = "<group>"; };
+		1104D5855D28E49E104CA004 /* mastercard.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = mastercard.der; sourceTree = "<group>"; };
+		138E82072FC6572612A8E248 /* GPTDSAuthenticationResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSAuthenticationResponseObject.h; sourceTree = "<group>"; };
+		13ED1CC076C6B3FB49C9197A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14D60BDF245487FE3362BE07 /* GPTDSSimulatorChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSimulatorChecker.m; sourceTree = "<group>"; };
+		14F83E51E99D453DF9C2DDE1 /* GPTDSChallengeResponseImageObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseImageObject.h; sourceTree = "<group>"; };
+		1501A7A3010FFE53D00E318F /* GPTDSRuntimeErrorEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSRuntimeErrorEvent.m; sourceTree = "<group>"; };
+		157970FF5B4A817041E3D668 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		172AF5C85EDBD92A1030E361 /* GPTDSDeviceInformationParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSDeviceInformationParameter.h; sourceTree = "<group>"; };
+		18D88DE3E34106F934015BF9 /* mt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mt; path = mt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1BBADD412A7C2D1FF35A7C86 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1BFBB92DBE97E16DE9D18B4A /* GPTDSJailbreakChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSJailbreakChecker.m; sourceTree = "<group>"; };
+		1D6269F8B91341C387A911DB /* GPTDSStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSStackView.m; sourceTree = "<group>"; };
+		1E844798B2733C8511AC080E /* UIFont+DefaultFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+DefaultFonts.h"; sourceTree = "<group>"; };
+		1F1FD11407319293954C6D81 /* GPTDSAlreadyInitializedException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSAlreadyInitializedException.h; sourceTree = "<group>"; };
+		1FBE88F6E2C3153A8315EDC6 /* GPTDSDeviceInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSDeviceInformation.h; sourceTree = "<group>"; };
+		1FC15225A5E83948EF546B71 /* NSData+JWEHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+JWEHelpers.m"; sourceTree = "<group>"; };
+		20533E2C69C4B80BB33A4766 /* GPTDSEphemeralKeyPair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSEphemeralKeyPair.h; sourceTree = "<group>"; };
+		210B22FF4DCB0C6E7C763EAB /* GPTDSUICustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSUICustomization.h; sourceTree = "<group>"; };
+		2192708AD201F80F6E1A39F7 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		237977B021FE538E5E4FA35C /* ARes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ARes.json; sourceTree = "<group>"; };
+		23A3DDCE911F8C43CF74CDF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		23C929BF760735CC01E1E8F5 /* GPTDSChallengeParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeParameters.m; sourceTree = "<group>"; };
+		24CE086326AF3DE336BF4F4C /* GPTDSChallengeResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeResponseObject.m; sourceTree = "<group>"; };
+		25C7D18868DDADEF4CB6220C /* GPTDSDeviceInformationParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDeviceInformationParameter.m; sourceTree = "<group>"; };
+		26C20D4B77372845627D6466 /* NSError+Guavapay3DS2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+Guavapay3DS2.m"; sourceTree = "<group>"; };
+		278F2C40987F5218BD031E3D /* GPTDSErrorMessageTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSErrorMessageTest.m; sourceTree = "<group>"; };
+		27AC486DA2A80A43C1F517B2 /* GPTDSAlreadyInitializedException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSAlreadyInitializedException.m; sourceTree = "<group>"; };
+		28C6B4F6BA431B9342970FD6 /* Guavapay3DS2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Guavapay3DS2.h; sourceTree = "<group>"; };
+		28E32DA72CAFBF2AF8099151 /* GPTDSAuthenticationResponseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSAuthenticationResponseTests.m; sourceTree = "<group>"; };
+		2C2666DF7D23EBC3FFE7CCF1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CB591796654445B8434A501 /* GPTDSErrorMessage+Internal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GPTDSErrorMessage+Internal.m"; sourceTree = "<group>"; };
+		2CFAC8D74AFFC2E61BAD82A5 /* GPTDSBrandingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSBrandingView.h; sourceTree = "<group>"; };
+		2D6004F2D9880055C0C0BCF1 /* GPTDSACSNetworkingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSACSNetworkingManager.m; sourceTree = "<group>"; };
+		2EF5AA537586EF706E4056FD /* GPTDSEllipticCurvePoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSEllipticCurvePoint.m; sourceTree = "<group>"; };
+		2FCABBF51CBA7F9FEF757B4C /* GPTDSNotInitializedException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSNotInitializedException.h; sourceTree = "<group>"; };
+		30D22985091381DFCDF077E9 /* GPTDSSecTypeUtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSecTypeUtilitiesTests.m; sourceTree = "<group>"; };
+		310E6B4E2C52C9EF006A03EC /* 150-issuer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "150-issuer.png"; sourceTree = "<group>"; };
+		310E6B4F2C52C9EF006A03EC /* 300-issuer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "300-issuer.png"; sourceTree = "<group>"; };
+		310E6B502C52C9EF006A03EC /* 150-payment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "150-payment.png"; sourceTree = "<group>"; };
+		310E6B512C52C9EF006A03EC /* 300-payment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "300-payment.png"; sourceTree = "<group>"; };
+		310E6B522C52C9EF006A03EC /* 450-issuer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "450-issuer.png"; sourceTree = "<group>"; };
+		310E6B532C52C9EF006A03EC /* 450-payment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "450-payment.png"; sourceTree = "<group>"; };
+		315AEE1534F9D9974DC1674B /* GPTDSChallengeResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponse.h; sourceTree = "<group>"; };
+		319DD1C72B0D50F80083BA32 /* GPTDSVisionSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSVisionSupport.h; sourceTree = "<group>"; };
+		31CDFC312BA8E58100B3DD91 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3255706D2304FB551C97305F /* GPTDSProtocolErrorEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSProtocolErrorEvent.m; sourceTree = "<group>"; };
+		33CEADC8006E456FD82CE134 /* GPTDSWhitelistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSWhitelistView.h; sourceTree = "<group>"; };
+		371F8076630A8839C1F6A508 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37ED28756222539D37554CC7 /* UIColor+ThirteenSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ThirteenSupport.m"; sourceTree = "<group>"; };
+		38572D4E32BF3670F1C83409 /* lv-LV */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "lv-LV"; path = "lv-LV.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		38F3A7D625E4B0D3506A37F6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A6D20D1DAB7D769E5E97528 /* GPTDSProtocolErrorEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSProtocolErrorEvent.h; sourceTree = "<group>"; };
+		3A8CD68A006F970DDC54469A /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		3A9F828840A3B361842E38DE /* GPTDSChallengeResponseImageObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeResponseImageObject.m; sourceTree = "<group>"; };
+		3AA2E6DA60350400C5270E08 /* GPTDSJSONWebSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSJSONWebSignature.h; sourceTree = "<group>"; };
+		3AD384AD2C76634D009AB784 /* GPTDSAnalyticsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSAnalyticsDelegate.h; sourceTree = "<group>"; };
+		3B6B71C61CF5ADC7796441F5 /* GPTDSCompletionEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSCompletionEvent.m; sourceTree = "<group>"; };
+		3B9A821F35B93898A7AC1ADF /* sl-SI */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sl-SI"; path = "sl-SI.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3E4C02D9D6978AD5C3D7E3D2 /* ec_test.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = ec_test.der; sourceTree = "<group>"; };
+		3F017BF6ECE0EBE4E0DFCF9C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		406D88ADED27D64DED2002A2 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		40DC4913154C3D3A27E35207 /* ca-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ca-ES"; path = "ca-ES.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		41E0F638E776A7F3456BDA3E /* GPTDSLocalizedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSLocalizedString.h; sourceTree = "<group>"; };
+		43540AB7D13C0C9A563C3F4D /* GPTDSSelectionCustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSelectionCustomization.m; sourceTree = "<group>"; };
+		43CB8F416E4F4CEA34391481 /* NSString+JWEHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JWEHelpers.m"; sourceTree = "<group>"; };
+		461F938CDE7ED6D06D9D2700 /* GPTDSException+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPTDSException+Internal.h"; sourceTree = "<group>"; };
+		461FDC130846625171164A9E /* et-EE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "et-EE"; path = "et-EE.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		474F39AA3F47D84F8D54E5B7 /* GPTDSWarningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSWarningTests.m; sourceTree = "<group>"; };
+		47C29E9F3D2A62676B424CD1 /* GPTDSThreeDSProtocolVersion+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPTDSThreeDSProtocolVersion+Private.h"; sourceTree = "<group>"; };
+		4869D6E14F01EDB960CB3065 /* GPTDSDeviceInformationParameter+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPTDSDeviceInformationParameter+Private.h"; sourceTree = "<group>"; };
+		49EF79D69693F937FEC46906 /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4A567E08748C86FCE2A75FEA /* UIColor+DefaultColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DefaultColors.h"; sourceTree = "<group>"; };
+		4B1E3760B1369DB1A33C9DFE /* GPTDSBase64URLEncodingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSBase64URLEncodingTests.m; sourceTree = "<group>"; };
+		4BC4D9FD1D3869D491CC2CF8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4C158B552B0CBE635A2AF7BB /* el-GR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "el-GR"; path = "el-GR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4CCA15E0819F9A9D89FEF9EA /* GPTDSChallengeResponseSelectionInfoObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseSelectionInfoObject.h; sourceTree = "<group>"; };
+		4DB91F58CF23E72636C69C41 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		4DD55BECC3FB85216FE46218 /* UIButton+CustomInitialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomInitialization.h"; sourceTree = "<group>"; };
+		4EA4AB3BA2FB41B3D5F38978 /* GPTDSAuthenticationResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSAuthenticationResponse.h; sourceTree = "<group>"; };
+		4EAD29E57D206B5D6BAF9099 /* GPTDSChallengeRequestParametersTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeRequestParametersTest.m; sourceTree = "<group>"; };
+		4EB746D4E46ABD2452A154AE /* Guavapay3DS2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Guavapay3DS2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5043E1CF6955176EC3D43F88 /* GPTDSAuthenticationResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSAuthenticationResponseObject.m; sourceTree = "<group>"; };
+		5049A72A6BEB558D8559A5EB /* GPTDSEllipticCurvePoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSEllipticCurvePoint.h; sourceTree = "<group>"; };
+		51E4A57094A671EB14380882 /* GPTDSSpacerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSpacerView.m; sourceTree = "<group>"; };
+		52D6E4F76CBA258163E57DF3 /* GPTDSEphemeralKeyPair+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPTDSEphemeralKeyPair+Testing.h"; sourceTree = "<group>"; };
+		52EEBC7D74623E1A1D7E3219 /* GPTDSChallengeResponseSelectionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseSelectionInfo.h; sourceTree = "<group>"; };
+		5316D0759F7F2ED0BF1D3B2E /* Guavapay3DS2DemoUI-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2DemoUI-Debug.xcconfig"; sourceTree = "<group>"; };
+		5463EB1CC8E85BE3BD12DEFF /* GPTDSErrorMessage+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPTDSErrorMessage+Internal.h"; sourceTree = "<group>"; };
+		5489DCAA65624C6F966816B6 /* GPTDSButtonCustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSButtonCustomization.m; sourceTree = "<group>"; };
+		56B1A52548593FE78D801734 /* GPTDSDeviceInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDeviceInformation.m; sourceTree = "<group>"; };
+		57B8822D21AADE7DA51931CC /* NSString+EmptyCheckingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmptyCheckingTests.m"; sourceTree = "<group>"; };
+		581EEE576D24047004C828DF /* GPTDSWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSWebView.h; sourceTree = "<group>"; };
+		58C38FF9205C9B7D79C51A37 /* sk-SK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sk-SK"; path = "sk-SK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5B05A609753EE71502409082 /* NSData+JWEHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+JWEHelpers.h"; sourceTree = "<group>"; };
+		5D93713CADD5589B5E6F6A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E401845EE5759CCD30786AA /* GPTDSChallengeResponseObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeResponseObjectTest.m; sourceTree = "<group>"; };
+		5E6A9565E97DF2544254AA94 /* GPTDSThreeDSProtocolVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSThreeDSProtocolVersion.h; sourceTree = "<group>"; };
+		5EAA444FA7C82BDA4AD907BF /* GPTDSThreeDS2Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSThreeDS2Service.h; sourceTree = "<group>"; };
+		5EE8BF51F49E161737406B3A /* NSDictionary+DecodingHelpersTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DecodingHelpersTest.m"; sourceTree = "<group>"; };
+		5F551808E65CDADD9B3A9CB8 /* GPTDSConfigParametersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSConfigParametersTests.m; sourceTree = "<group>"; };
+		5FDE2481364C454058BF2377 /* GPTDSTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSTransaction.m; sourceTree = "<group>"; };
+		5FF3235EDD908CC1500399A1 /* GPTDSTestJSONUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSTestJSONUtils.m; sourceTree = "<group>"; };
+		60693BC560C4927ACFD2E6C3 /* GPTDSChallengeRequestParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeRequestParameters.m; sourceTree = "<group>"; };
+		6118F98576E9A39A7292C6C6 /* GPTDSACSNetworkingManagerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSACSNetworkingManagerTest.m; sourceTree = "<group>"; };
+		615F1BD510661B38D6825128 /* GPTDSWhitelistView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSWhitelistView.m; sourceTree = "<group>"; };
+		62773D5C85C567F28BCE0DA5 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		634095EA97A4E48BF7CAA03F /* UIFont+DefaultFonts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DefaultFonts.m"; sourceTree = "<group>"; };
+		645D0BB927B7F8A0D37EE04D /* GPTDSErrorMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSErrorMessage.h; sourceTree = "<group>"; };
+		6690476C1BEA59C37576FB36 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		68ED2A0E11E1B27980E0C60A /* GPTDSTextFieldCustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSTextFieldCustomization.h; sourceTree = "<group>"; };
+		6932DD26C7C16938DFA0E198 /* GPTDSLabelCustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSLabelCustomization.h; sourceTree = "<group>"; };
+		6940D75CA36F7DB9FB56196B /* Guavapay3DS2DemoUI-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2DemoUI-Release.xcconfig"; sourceTree = "<group>"; };
+		694DF6F47767A651907D55D4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6AA43E7E90E4002DD56B7C3D /* GPTDSDirectoryServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSDirectoryServer.h; sourceTree = "<group>"; };
+		6AA75957DD13FA92FA866AF3 /* GPTDSDirectoryServerCertificateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDirectoryServerCertificateTests.m; sourceTree = "<group>"; };
+		6B487D8DD39DAC17042A3F04 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6B9B49A5CF64DCB23CD0AEDE /* GPTDSJSONEncoderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSJSONEncoderTest.m; sourceTree = "<group>"; };
+		6CFF141AC98F213122D037C6 /* GPTDSFooterCustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSFooterCustomization.m; sourceTree = "<group>"; };
+		6DDB6222A2EF31FDB7592368 /* GPTDSErrorMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSErrorMessage.m; sourceTree = "<group>"; };
+		6F030410FDABFF833CD8FE46 /* GPTDSException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSException.m; sourceTree = "<group>"; };
+		6FDAC320458399141EB161E2 /* GPTDSInvalidInputException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSInvalidInputException.m; sourceTree = "<group>"; };
+		71494F94F36F4B731A27D182 /* lt-LT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "lt-LT"; path = "lt-LT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		72DBE992B33F45C059EDB597 /* GPTDSSpacerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSpacerView.h; sourceTree = "<group>"; };
+		762DEC6662DF8240FE19CFFC /* GPTDSChallengeRequestParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeRequestParameters.h; sourceTree = "<group>"; };
+		76EA9DF8572C992E30BCF8A3 /* GPTDSJSONWebEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSJSONWebEncryption.h; sourceTree = "<group>"; };
+		77646CEC7EE754F47EDBDA4F /* GPTDSThreeDS2Service.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSThreeDS2Service.m; sourceTree = "<group>"; };
+		7859D635964B2854A07B5285 /* cs-CZ */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "cs-CZ"; path = "cs-CZ.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7971EB56716D5E2F59053B6D /* acs_challenge.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = acs_challenge.html; sourceTree = "<group>"; };
+		7A637DA708BC866C2903E0EA /* GPTDSDeviceInformationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSDeviceInformationManager.h; sourceTree = "<group>"; };
+		7AC1C5F6F1311F50D9C37291 /* GPTDSProcessingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSProcessingView.m; sourceTree = "<group>"; };
+		7CD753D9BBFC378C1B491B00 /* GPTDSSelectionCustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSelectionCustomization.h; sourceTree = "<group>"; };
+		7D02FAFC403BC901931A629F /* GPTDSChallengeResponseMessageExtensionObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeResponseMessageExtensionObject.m; sourceTree = "<group>"; };
+		7FF8ACC073E814B7DEBA7647 /* GPTDSThreeDS2ServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSThreeDS2ServiceTests.m; sourceTree = "<group>"; };
+		82C41E6DC2CC247ECC17F2B9 /* GPTDSTextChallengeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSTextChallengeView.h; sourceTree = "<group>"; };
+		83838563F29179FB1E9F2E66 /* cartes-bancaires.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cartes-bancaires.der"; sourceTree = "<group>"; };
+		83BDD516620860DC08B36B96 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84967ED0D9B206B3F5AA4F02 /* GPTDSProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSProgressViewController.m; sourceTree = "<group>"; };
+		85093DF42DC27D9E00328311 /* GPTDSPackedSDKChallengeParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSPackedSDKChallengeParameters.m; sourceTree = "<group>"; };
+		85093DF62DC27E0A00328311 /* GPTDSPackedSDKChallengeParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSPackedSDKChallengeParameters.h; sourceTree = "<group>"; };
+		850F4D532DAD26FD00244BBF /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		850F4D552DAD28E500244BBF /* DemoViewController+TestObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemoViewController+TestObjects.swift"; sourceTree = "<group>"; };
+		852649382DB66FE300C56781 /* CardFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFormView.swift; sourceTree = "<group>"; };
+		8526493E2DB675A200C56781 /* DemoFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFlowViewController.swift; sourceTree = "<group>"; };
+		852649402DB67B3100C56781 /* UIViewController+Snackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snackbar.swift"; sourceTree = "<group>"; };
+		852649422DB67C7B00C56781 /* UIButton+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Loading.swift"; sourceTree = "<group>"; };
+		852649492DB6828D00C56781 /* PaymentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsView.swift; sourceTree = "<group>"; };
+		8528BC582DAFB6E9003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTDSChallengeResponseViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
+		8528BC5A2DAFB6F6003D4C50 /* Guavapay3DS2DemoUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guavapay3DS2DemoUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		852F7BEF2DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Guavapay3DS2DemoUI.xcassets; sourceTree = "<group>"; };
+		853A361AB630A2BD402D1B47 /* GPTDSInvalidInputException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSInvalidInputException.h; sourceTree = "<group>"; };
+		85526F2F2DD1DFB5005DB15E /* ChallengeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeType.swift; sourceTree = "<group>"; };
+		85742C4C2DAD65A000690F70 /* JSONDecoder+ISODate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+ISODate.swift"; sourceTree = "<group>"; };
+		858519BB2E031013000C6FCE /* Data+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Base64.swift"; sourceTree = "<group>"; };
+		859177F52DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSProcessingSpinnerView.h; sourceTree = "<group>"; };
+		859177F62DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSProcessingSpinnerView.m; sourceTree = "<group>"; };
+		8594EC762E03043E00DBF99C /* SwiftGuavapay3DS2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGuavapay3DS2.h; sourceTree = "<group>"; };
+		8594EC852E03069900DBF99C /* String+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		8594EC872E03072100DBF99C /* String+JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JWT.swift"; sourceTree = "<group>"; };
+		8594EC9A2E0308EB00DBF99C /* SwiftGuavapay3DS2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGuavapay3DS2Tests.swift; sourceTree = "<group>"; };
+		8596AB4E2DAFF799004C44BD /* GetOrderDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrderDTO.swift; sourceTree = "<group>"; };
+		8596AB502DAFF81B004C44BD /* PostExecuteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostExecuteDTO.swift; sourceTree = "<group>"; };
+		8596AB512DAFF81B004C44BD /* ExecuteErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteErrorDTO.swift; sourceTree = "<group>"; };
+		8596AB522DAFF81B004C44BD /* PostOrderDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOrderDTO.swift; sourceTree = "<group>"; };
+		85A1EA382DC9170E0097FADD /* GPTDSChallengeResponseViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseViewControllerDelegate.h; sourceTree = "<group>"; };
+		85A1EA3A2DCA4DE40097FADD /* PutPaymentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutPaymentDTO.swift; sourceTree = "<group>"; };
+		85A1EA3C2DCA64160097FADD /* DemoFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFlowView.swift; sourceTree = "<group>"; };
+		85A1EA3E2DCA753A0097FADD /* GPTDSErrorBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSErrorBannerView.h; sourceTree = "<group>"; };
+		85A1EA402DCA75510097FADD /* GPTDSErrorBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSErrorBannerView.m; sourceTree = "<group>"; };
+		85B03E412DC0C32000EECD0C /* DemoFlowViewController+GPTDSChallengeResponseViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemoFlowViewController+GPTDSChallengeResponseViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		85B03E432DC0C37600EECD0C /* DemoFlowViewController+GPTDSChallengeStatusReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemoFlowViewController+GPTDSChallengeStatusReceiver.swift"; sourceTree = "<group>"; };
+		85B03E452DC0C3BC00EECD0C /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		85B03E472DC0CEF800EECD0C /* DemoFlowViewController+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemoFlowViewController+Constants.swift"; sourceTree = "<group>"; };
+		85B03E492DC0CFE300EECD0C /* DemoFlowViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemoFlowViewController+Helpers.swift"; sourceTree = "<group>"; };
+		85C621F12DAD24000045185C /* Guavapay3DS2DemoUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Guavapay3DS2DemoUI-Bridging-Header.h"; path = "Guavapay3DS2DemoUI/Sources/Guavapay3DS2DemoUI-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		85C621F22DAD24170045185C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85D3C5B62DD39832004D61E8 /* GPTDSPackedSDKChallengeParametersTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSPackedSDKChallengeParametersTest.m; sourceTree = "<group>"; };
+		85EF60E12DB78E0F00AD887B /* GPTDSResendButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSResendButton.m; sourceTree = "<group>"; };
+		85EF60E32DB78ED500AD887B /* GPTDSResendButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSResendButton.h; sourceTree = "<group>"; };
+		869733153BCA6BE2EB7A452F /* UIColor+DefaultColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DefaultColors.m"; sourceTree = "<group>"; };
+		89B5ED899439D1C1054CB448 /* GPTDSConfigParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSConfigParameters.m; sourceTree = "<group>"; };
+		89ED2133B61092FE1B478204 /* GPTDSChallengeParametersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeParametersTests.m; sourceTree = "<group>"; };
+		8A6035A8211B3D50D10EB947 /* bg-BG */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "bg-BG"; path = "bg-BG.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8A9F5C315222AFCD14C9342F /* GPTDSTransaction+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPTDSTransaction+Private.h"; sourceTree = "<group>"; };
+		8AC648332A706809F1BDFD59 /* GPTDSThreeDSProtocolVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSThreeDSProtocolVersion.m; sourceTree = "<group>"; };
+		8B0F0485B7048DDAA7DA8F9B /* UIView+LayoutSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutSupport.m"; sourceTree = "<group>"; };
+		8B8D429F1C03603DB218700F /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C6D262891811FB3FE0C947E /* CRes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CRes.json; sourceTree = "<group>"; };
+		8F72413F99F8E50FD0FA085D /* UIViewController+Guavapay3DS2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Guavapay3DS2.h"; sourceTree = "<group>"; };
+		939C45AE068CF4F5BEB4C138 /* GPTDSExpandableInformationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSExpandableInformationView.h; sourceTree = "<group>"; };
+		94943BEAB94E949AF9830EFA /* GPTDSJailbreakChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSJailbreakChecker.h; sourceTree = "<group>"; };
+		95641ECBE1AE1CC198013405 /* GPTDSProcessingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSProcessingView.h; sourceTree = "<group>"; };
+		9564F43EF7CF4F60C3C202CD /* GPTDSBundleLocator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSBundleLocator.m; sourceTree = "<group>"; };
+		9580A82A59EB2B0103EDF47A /* GPTDSDeviceInformationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDeviceInformationManager.m; sourceTree = "<group>"; };
+		969DE2FA3845BB7939D3CD2E /* GPTDSAuthenticationRequestParametersTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSAuthenticationRequestParametersTest.m; sourceTree = "<group>"; };
+		97163B5E9598CA3A298920B9 /* GPTDSTextFieldCustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSTextFieldCustomization.m; sourceTree = "<group>"; };
+		97505E93BE83F233E69BB5A9 /* GPTDSJSONWebEncryptionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSJSONWebEncryptionTests.m; sourceTree = "<group>"; };
+		9754FA4F3CC6AA921787916B /* GPTDSDirectoryServerCertificate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDirectoryServerCertificate.m; sourceTree = "<group>"; };
+		99392D3F702EC6BF7CE15291 /* GPTDSJSONWebEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSJSONWebEncryption.m; sourceTree = "<group>"; };
+		99451064136843047C7881AD /* UIViewController+Guavapay3DS2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Guavapay3DS2.m"; sourceTree = "<group>"; };
+		9946D28A86E85A6C84EB6C7B /* GPTDSSwiftTryCatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSwiftTryCatch.m; sourceTree = "<group>"; };
+		99CB2B66DBD356B5D222EDA9 /* UIView+LayoutSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutSupport.h"; sourceTree = "<group>"; };
+		9A8B0001705400C661678617 /* UIColor+ThirteenSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ThirteenSupport.h"; sourceTree = "<group>"; };
+		9E1CB633CA5917B2168BB928 /* Guavapay3DS2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Guavapay3DS2.xcassets; sourceTree = "<group>"; };
+		9F4376BB07FD1EE783249AED /* GPTDSGuavapay3DS2Error.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSGuavapay3DS2Error.m; sourceTree = "<group>"; };
+		A09A89BBE7360F93195641C9 /* GPTDSImageLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSImageLoader.m; sourceTree = "<group>"; };
+		A0ADFB365AD2DE9E84873BB1 /* GPTDSSimulatorChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSimulatorChecker.h; sourceTree = "<group>"; };
+		A137A31BEFCCB646FB754EE2 /* GPTDSBundleLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSBundleLocator.h; sourceTree = "<group>"; };
+		A1BFB8640032796CDA016765 /* GPTDSConfigParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSConfigParameters.h; sourceTree = "<group>"; };
+		A1DC6B47C06B522B22EB19FF /* GPTDSJSONWebSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSJSONWebSignature.m; sourceTree = "<group>"; };
+		A3DFB001DB5BA7F1AFA7353A /* GPTDSIPAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSIPAddress.h; sourceTree = "<group>"; };
+		A4050F381183D6FDCC990D01 /* GPTDSDeviceInformationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDeviceInformationManagerTests.m; sourceTree = "<group>"; };
+		A4A3CCBE9A2E8C1A73D8214E /* GPTDSTransactionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSTransactionTest.m; sourceTree = "<group>"; };
+		A4D460893CB5DDE52AA0AB85 /* GPTDSChallengeSelectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeSelectionView.m; sourceTree = "<group>"; };
+		A502CCC5190F6B642EEC0CE6 /* GPTDSWarning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSWarning.m; sourceTree = "<group>"; };
+		A55B2474CD1A39D70869B75B /* GPTDSUICustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSUICustomization.m; sourceTree = "<group>"; };
+		A5DBDDEB5C5DAE2EA8C95CC3 /* GPTDSSynchronousLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSynchronousLocationManager.m; sourceTree = "<group>"; };
+		A6778F8CE36F769DF608F932 /* NSError+Guavapay3DS2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+Guavapay3DS2.h"; sourceTree = "<group>"; };
+		A70071543985284E0D9DAC64 /* visa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = visa.der; sourceTree = "<group>"; };
+		A8A77DB1C711B8696B2E5FEF /* NSString+EmptyChecking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EmptyChecking.h"; sourceTree = "<group>"; };
+		A8E62EC973FC5C9905A40CA8 /* GPTDSCustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSCustomization.m; sourceTree = "<group>"; };
+		A9CD7EC589C5CC6CE5CF9310 /* Guavapay3DS2-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2-Debug.xcconfig"; sourceTree = "<group>"; };
+		AA29B74DD3963B1205AA1C0C /* UIButton+CustomInitialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomInitialization.m"; sourceTree = "<group>"; };
+		AA85BC717C46C1B95AF8C1E3 /* GPTDSWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSWebView.m; sourceTree = "<group>"; };
+		AA8A113E655E23381CB3BDA4 /* Guavapay3DS2DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Guavapay3DS2DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8BE982004398CF8AAA7D1E /* GPTDSChallengeResponseMessageExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseMessageExtension.h; sourceTree = "<group>"; };
+		AB871F64FC72EBC7A91F96C1 /* GPTDSAuthenticationRequestParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSAuthenticationRequestParameters.m; sourceTree = "<group>"; };
+		AE1BBF3A441B1F782B766F61 /* GPTDSExpandableInformationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSExpandableInformationView.m; sourceTree = "<group>"; };
+		AE53BAA72835AFA3B35C58D3 /* GPTDSGuavapay3DS2Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSGuavapay3DS2Error.h; sourceTree = "<group>"; };
+		AF389752CCEB6FA734AAE31E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AFF187D1D58405C736474042 /* GPTDSCustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSCustomization.h; sourceTree = "<group>"; };
+		B015B937DD3657D62C61CE58 /* GPTDSDirectoryServerCertificate+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPTDSDirectoryServerCertificate+Internal.h"; sourceTree = "<group>"; };
+		B064352BB2876CA7266C410A /* GPTDSChallengeResponseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeResponseViewController.m; sourceTree = "<group>"; };
+		B1A7D41498B79E35BD724681 /* ms-MY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ms-MY"; path = "ms-MY.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B219360BFB325779485BF702 /* GPTDSJSONDecodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSJSONDecodable.h; sourceTree = "<group>"; };
+		B458FCA7DFDBF75E62A43BA1 /* GPTDSSelectionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSelectionButton.m; sourceTree = "<group>"; };
+		B6275E7099E55F0C04688890 /* ul-test.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ul-test.der"; sourceTree = "<group>"; };
+		B71A1C110DCC23A9CE929837 /* GPTDSException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSException.h; sourceTree = "<group>"; };
+		B7A75140FB62A71261CAF5EC /* GPTDSChallengeStatusReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeStatusReceiver.h; sourceTree = "<group>"; };
+		B7AE3B4732D203134FE096FE /* GPTDSStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSStackView.h; sourceTree = "<group>"; };
+		B7BD1E24EA9427121E148DFC /* GPTDSNotInitializedException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSNotInitializedException.m; sourceTree = "<group>"; };
+		B8619CA38E2A5B49DBF8546B /* GPTDSRuntimeException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSRuntimeException.h; sourceTree = "<group>"; };
+		B97D91CB54F48F64CAC9E378 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA96C9FFA48B85F9C42E8C68 /* GPTDSFooterCustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSFooterCustomization.h; sourceTree = "<group>"; };
+		BAAC56EDE0AAD2E50E02E9AE /* GPTDSChallengeResponseMessageExtensionObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseMessageExtensionObject.h; sourceTree = "<group>"; };
+		BB065D6900E95C5E90864C16 /* GPTDSIntegrityChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSIntegrityChecker.m; sourceTree = "<group>"; };
+		BC3EE020DC9358FF56389BBE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BD94CAE01A17E083E5617E56 /* GPTDSButtonCustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSButtonCustomization.h; sourceTree = "<group>"; };
+		BF80634E06E8D6F598CFC667 /* GPTDSEphemeralKeyPairTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSEphemeralKeyPairTests.m; sourceTree = "<group>"; };
+		C02DF839637771684BC57B3A /* GPTDSIntegrityChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSIntegrityChecker.h; sourceTree = "<group>"; };
+		C12AE31D386D4A193C00004B /* GPTDSSynchronousLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSynchronousLocationManager.h; sourceTree = "<group>"; };
+		C29F78CC37253B0D33FF86F2 /* GPTDSDebuggerChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDebuggerChecker.m; sourceTree = "<group>"; };
+		C4777F15603AC755362BD846 /* GPTDSSelectionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSelectionButton.h; sourceTree = "<group>"; };
+		C566D6E444FCA4BCEC65F3D2 /* NSDictionary+DecodingHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DecodingHelpers.m"; sourceTree = "<group>"; };
+		C78AA1D7AD2BAB52EE58D078 /* NSDictionary+DecodingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DecodingHelpers.h"; sourceTree = "<group>"; };
+		C893FD867C964775E68AE85F /* GPTDSChallengeInformationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeInformationView.h; sourceTree = "<group>"; };
+		C8F0E11AA6794BFB1715685E /* GPTDSSecTypeUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSecTypeUtilities.h; sourceTree = "<group>"; };
+		C91B239583899192C7B26FCF /* GPTDSAuthenticationRequestParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSAuthenticationRequestParameters.h; sourceTree = "<group>"; };
+		CB00E968CF4DD07FB8BF2AAA /* GPTDSIPAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSIPAddress.m; sourceTree = "<group>"; };
+		CB3154597040B803ADE14F9E /* GPTDSUICustomizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSUICustomizationTests.m; sourceTree = "<group>"; };
+		CD33421F13A675DCFE597FFB /* GPTDSRuntimeException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSRuntimeException.m; sourceTree = "<group>"; };
+		CE4030C50383B488C97F4B56 /* Guavapay3DS2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Guavapay3DS2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECC1E22D0F0336039B435DE /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CF3DED43BD4E0226BFB0759D /* GPTDSSecTypeUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSecTypeUtilities.m; sourceTree = "<group>"; };
+		D03B98D5861739833B197D8F /* GPTDSChallengeParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeParameters.h; sourceTree = "<group>"; };
+		D122FAE093BC4F649CC6E7AB /* GPTDSDebuggerChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSDebuggerChecker.h; sourceTree = "<group>"; };
+		D24777EE9931075405F370DB /* GPTDSChallengeInformationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeInformationView.m; sourceTree = "<group>"; };
+		D3F5A6D5A680F008C00A2D69 /* nn-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nn-NO"; path = "nn-NO.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D7A9D36FEF7E97CF735D82B8 /* Guavapay3DS2DemoUITests-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2DemoUITests-Release.xcconfig"; sourceTree = "<group>"; };
+		D827473D1858B2BED85BDFA1 /* GPTDSACSNetworkingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSACSNetworkingManager.h; sourceTree = "<group>"; };
+		D8B7EE0F935EF44EB2EF7D45 /* amex.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = amex.der; sourceTree = "<group>"; };
+		D8D309E4FBE7E73D0BB83BF5 /* NSString+EmptyChecking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmptyChecking.m"; sourceTree = "<group>"; };
+		DE7D85369E012B15702D8DF9 /* GPTDSRuntimeErrorEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSRuntimeErrorEvent.h; sourceTree = "<group>"; };
+		E0949399E96663964091C0EF /* NSLayoutConstraint+LayoutSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+LayoutSupport.h"; sourceTree = "<group>"; };
+		E12798864D5CFFB7157D4CF5 /* ErrorMessage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ErrorMessage.json; sourceTree = "<group>"; };
+		E1630D876436E43547FF69CE /* GPTDSNavigationBarCustomization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSNavigationBarCustomization.h; sourceTree = "<group>"; };
+		E45303DCFFDC390971E6E122 /* GPTDSChallengeResponseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseViewController.h; sourceTree = "<group>"; };
+		E4C668442518B446D573AD24 /* GPTDSJSONWebSignatureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSJSONWebSignatureTests.m; sourceTree = "<group>"; };
+		E5BC34A661D9080A2EE239F8 /* GPTDSSwiftTryCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSwiftTryCatch.h; sourceTree = "<group>"; };
+		E629F85B783E42244E37DFA9 /* GPTDSProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSProgressViewController.h; sourceTree = "<group>"; };
+		E64C700DED163CB77DCDEA78 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E6A3C5D4C46E681B7D76B2BA /* GPTDSJSONEncodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSJSONEncodable.h; sourceTree = "<group>"; };
+		E9F1A5A8E5922748A9BEC724 /* GPTDSNavigationBarCustomization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSNavigationBarCustomization.m; sourceTree = "<group>"; };
+		EB1BDF12DBD6264C6199FFA7 /* GPTDSChallengeResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeResponseObject.h; sourceTree = "<group>"; };
+		EB910E98EDD6D3E00802793C /* GPTDSChallengeSelectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSChallengeSelectionView.h; sourceTree = "<group>"; };
+		ECC649704CDDA50E73DB3C10 /* GPTDSImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSImageLoader.h; sourceTree = "<group>"; };
+		EF5219762616ACF204F08C19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F02456AB660E709F332C0C7D /* GPTDSSynchronousLocationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSynchronousLocationManagerTests.m; sourceTree = "<group>"; };
+		F046DE266BAAE3DA0AC43785 /* GPTDSChallengeResponseSelectionInfoObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSChallengeResponseSelectionInfoObject.m; sourceTree = "<group>"; };
+		F112967E9FE8EE02FFFDC313 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F139E48FDEFD921FF410892F /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F2BC7014D26158AC9D74CC67 /* Guavapay3DS2Tests-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2Tests-Debug.xcconfig"; sourceTree = "<group>"; };
+		F2D0DB022D4825C600DA26AD /* HTMLCRes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HTMLCRes.json; sourceTree = "<group>"; };
+		F363439353A6DD554FC44AC2 /* GPTDSOSVersionChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSOSVersionChecker.m; sourceTree = "<group>"; };
+		F40CC91AA69F5296B0AA985C /* GPTDSTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSTransaction.h; sourceTree = "<group>"; };
+		F4D6DB90E3D01495C1F9BFE9 /* ro-RO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ro-RO"; path = "ro-RO.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F5686FB8EFA3AE3B39F85BBC /* Guavapay3DS2Tests-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2Tests-Release.xcconfig"; sourceTree = "<group>"; };
+		F86F34D1339F7467D0FDAC75 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8F6FFED1A0966A49B78F252 /* Guavapay3DS2-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Guavapay3DS2-Release.xcconfig"; sourceTree = "<group>"; };
+		F99B290CF2B4987A4CFE5DCE /* NSLayoutConstraint+LayoutSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+LayoutSupport.m"; sourceTree = "<group>"; };
+		F9C39A42ECBA58571EFA03C5 /* GPTDSBrandingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSBrandingView.m; sourceTree = "<group>"; };
+		F9D521B45783D36C8E83F0EA /* GPTDSEphemeralKeyPair.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSEphemeralKeyPair.m; sourceTree = "<group>"; };
+		FAE7026135B5049B732CEDEB /* GPTDSOSVersionChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSOSVersionChecker.h; sourceTree = "<group>"; };
+		FC52C3C844BDA981EE34BAB9 /* GPTDSDeviceInformationParameterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSDeviceInformationParameterTests.m; sourceTree = "<group>"; };
+		FE1DE9D978E6E682CB094128 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16B0A41D6C0F157DDF229397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BA2E6ABDD8E80963FFC671 /* XCTest.framework in Frameworks */,
+				4D73C2FBAC9B96ECB45BDC94 /* Guavapay3DS2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECF69FED0DDA991C821CF6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1469551DB874336B68F6C39D /* Guavapay3DS2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A56B40D43D552FDE77670CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF06B99FECD98C26F7B64665 /* XCTest.framework in Frameworks */,
+				A8A86B9BCE9702D74E0D2DB6 /* Guavapay3DS2.framework in Frameworks */,
+				8528BC572DAFB568003D4C50 /* iOSSnapshotTestCase in Frameworks */,
+				3C6D16D8E7B5BC865D956A0B /* iOSSnapshotTestCase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C65BFA70E847549921E39F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		148D1BA6A2E8B2B60CA9951F /* Guavapay3DS2 */ = {
+			isa = PBXGroup;
+			children = (
+				850556E22DB7966500C5381B /* Extensions */,
+				D827473D1858B2BED85BDFA1 /* GPTDSACSNetworkingManager.h */,
+				2D6004F2D9880055C0C0BCF1 /* GPTDSACSNetworkingManager.m */,
+				138E82072FC6572612A8E248 /* GPTDSAuthenticationResponseObject.h */,
+				5043E1CF6955176EC3D43F88 /* GPTDSAuthenticationResponseObject.m */,
+				2CFAC8D74AFFC2E61BAD82A5 /* GPTDSBrandingView.h */,
+				F9C39A42ECBA58571EFA03C5 /* GPTDSBrandingView.m */,
+				A137A31BEFCCB646FB754EE2 /* GPTDSBundleLocator.h */,
+				9564F43EF7CF4F60C3C202CD /* GPTDSBundleLocator.m */,
+				C893FD867C964775E68AE85F /* GPTDSChallengeInformationView.h */,
+				D24777EE9931075405F370DB /* GPTDSChallengeInformationView.m */,
+				762DEC6662DF8240FE19CFFC /* GPTDSChallengeRequestParameters.h */,
+				60693BC560C4927ACFD2E6C3 /* GPTDSChallengeRequestParameters.m */,
+				315AEE1534F9D9974DC1674B /* GPTDSChallengeResponse.h */,
+				10C45EE3433B731253E21E24 /* GPTDSChallengeResponseImage.h */,
+				14F83E51E99D453DF9C2DDE1 /* GPTDSChallengeResponseImageObject.h */,
+				3A9F828840A3B361842E38DE /* GPTDSChallengeResponseImageObject.m */,
+				AA8BE982004398CF8AAA7D1E /* GPTDSChallengeResponseMessageExtension.h */,
+				BAAC56EDE0AAD2E50E02E9AE /* GPTDSChallengeResponseMessageExtensionObject.h */,
+				7D02FAFC403BC901931A629F /* GPTDSChallengeResponseMessageExtensionObject.m */,
+				EB1BDF12DBD6264C6199FFA7 /* GPTDSChallengeResponseObject.h */,
+				24CE086326AF3DE336BF4F4C /* GPTDSChallengeResponseObject.m */,
+				52EEBC7D74623E1A1D7E3219 /* GPTDSChallengeResponseSelectionInfo.h */,
+				4CCA15E0819F9A9D89FEF9EA /* GPTDSChallengeResponseSelectionInfoObject.h */,
+				F046DE266BAAE3DA0AC43785 /* GPTDSChallengeResponseSelectionInfoObject.m */,
+				E45303DCFFDC390971E6E122 /* GPTDSChallengeResponseViewController.h */,
+				B064352BB2876CA7266C410A /* GPTDSChallengeResponseViewController.m */,
+				85A1EA382DC9170E0097FADD /* GPTDSChallengeResponseViewControllerDelegate.h */,
+				EB910E98EDD6D3E00802793C /* GPTDSChallengeSelectionView.h */,
+				A4D460893CB5DDE52AA0AB85 /* GPTDSChallengeSelectionView.m */,
+				D122FAE093BC4F649CC6E7AB /* GPTDSDebuggerChecker.h */,
+				C29F78CC37253B0D33FF86F2 /* GPTDSDebuggerChecker.m */,
+				1FBE88F6E2C3153A8315EDC6 /* GPTDSDeviceInformation.h */,
+				56B1A52548593FE78D801734 /* GPTDSDeviceInformation.m */,
+				7A637DA708BC866C2903E0EA /* GPTDSDeviceInformationManager.h */,
+				9580A82A59EB2B0103EDF47A /* GPTDSDeviceInformationManager.m */,
+				172AF5C85EDBD92A1030E361 /* GPTDSDeviceInformationParameter.h */,
+				25C7D18868DDADEF4CB6220C /* GPTDSDeviceInformationParameter.m */,
+				6AA43E7E90E4002DD56B7C3D /* GPTDSDirectoryServer.h */,
+				069990DA025BE9F33602E96A /* GPTDSDirectoryServerCertificate.h */,
+				9754FA4F3CC6AA921787916B /* GPTDSDirectoryServerCertificate.m */,
+				5049A72A6BEB558D8559A5EB /* GPTDSEllipticCurvePoint.h */,
+				2EF5AA537586EF706E4056FD /* GPTDSEllipticCurvePoint.m */,
+				20533E2C69C4B80BB33A4766 /* GPTDSEphemeralKeyPair.h */,
+				F9D521B45783D36C8E83F0EA /* GPTDSEphemeralKeyPair.m */,
+				85A1EA3E2DCA753A0097FADD /* GPTDSErrorBannerView.h */,
+				85A1EA402DCA75510097FADD /* GPTDSErrorBannerView.m */,
+				939C45AE068CF4F5BEB4C138 /* GPTDSExpandableInformationView.h */,
+				AE1BBF3A441B1F782B766F61 /* GPTDSExpandableInformationView.m */,
+				ECC649704CDDA50E73DB3C10 /* GPTDSImageLoader.h */,
+				A09A89BBE7360F93195641C9 /* GPTDSImageLoader.m */,
+				C02DF839637771684BC57B3A /* GPTDSIntegrityChecker.h */,
+				BB065D6900E95C5E90864C16 /* GPTDSIntegrityChecker.m */,
+				A3DFB001DB5BA7F1AFA7353A /* GPTDSIPAddress.h */,
+				CB00E968CF4DD07FB8BF2AAA /* GPTDSIPAddress.m */,
+				94943BEAB94E949AF9830EFA /* GPTDSJailbreakChecker.h */,
+				1BFBB92DBE97E16DE9D18B4A /* GPTDSJailbreakChecker.m */,
+				76EA9DF8572C992E30BCF8A3 /* GPTDSJSONWebEncryption.h */,
+				99392D3F702EC6BF7CE15291 /* GPTDSJSONWebEncryption.m */,
+				3AA2E6DA60350400C5270E08 /* GPTDSJSONWebSignature.h */,
+				A1DC6B47C06B522B22EB19FF /* GPTDSJSONWebSignature.m */,
+				41E0F638E776A7F3456BDA3E /* GPTDSLocalizedString.h */,
+				FAE7026135B5049B732CEDEB /* GPTDSOSVersionChecker.h */,
+				F363439353A6DD554FC44AC2 /* GPTDSOSVersionChecker.m */,
+				85093DF62DC27E0A00328311 /* GPTDSPackedSDKChallengeParameters.h */,
+				85093DF42DC27D9E00328311 /* GPTDSPackedSDKChallengeParameters.m */,
+				859177F52DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.h */,
+				859177F62DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.m */,
+				95641ECBE1AE1CC198013405 /* GPTDSProcessingView.h */,
+				7AC1C5F6F1311F50D9C37291 /* GPTDSProcessingView.m */,
+				E629F85B783E42244E37DFA9 /* GPTDSProgressViewController.h */,
+				84967ED0D9B206B3F5AA4F02 /* GPTDSProgressViewController.m */,
+				85EF60E32DB78ED500AD887B /* GPTDSResendButton.h */,
+				85EF60E12DB78E0F00AD887B /* GPTDSResendButton.m */,
+				C8F0E11AA6794BFB1715685E /* GPTDSSecTypeUtilities.h */,
+				CF3DED43BD4E0226BFB0759D /* GPTDSSecTypeUtilities.m */,
+				C4777F15603AC755362BD846 /* GPTDSSelectionButton.h */,
+				B458FCA7DFDBF75E62A43BA1 /* GPTDSSelectionButton.m */,
+				A0ADFB365AD2DE9E84873BB1 /* GPTDSSimulatorChecker.h */,
+				14D60BDF245487FE3362BE07 /* GPTDSSimulatorChecker.m */,
+				72DBE992B33F45C059EDB597 /* GPTDSSpacerView.h */,
+				51E4A57094A671EB14380882 /* GPTDSSpacerView.m */,
+				B7AE3B4732D203134FE096FE /* GPTDSStackView.h */,
+				1D6269F8B91341C387A911DB /* GPTDSStackView.m */,
+				C12AE31D386D4A193C00004B /* GPTDSSynchronousLocationManager.h */,
+				A5DBDDEB5C5DAE2EA8C95CC3 /* GPTDSSynchronousLocationManager.m */,
+				82C41E6DC2CC247ECC17F2B9 /* GPTDSTextChallengeView.h */,
+				04E6B6D3CAE363114723472F /* GPTDSTextChallengeView.m */,
+				8AC648332A706809F1BDFD59 /* GPTDSThreeDSProtocolVersion.m */,
+				319DD1C72B0D50F80083BA32 /* GPTDSVisionSupport.h */,
+				581EEE576D24047004C828DF /* GPTDSWebView.h */,
+				AA85BC717C46C1B95AF8C1E3 /* GPTDSWebView.m */,
+				33CEADC8006E456FD82CE134 /* GPTDSWhitelistView.h */,
+				615F1BD510661B38D6825128 /* GPTDSWhitelistView.m */,
+				0F024DEAD6628A0229856656 /* Guavapay3DS2-Bridging-Header.h */,
+				E4F3BE80D5F61EAC1694F954 /* include */,
+				5D93713CADD5589B5E6F6A0D /* Info.plist */,
+				31CDFC312BA8E58100B3DD91 /* PrivacyInfo.xcprivacy */,
+				A3DDF4E193616FA951B1B120 /* Resources */,
+			);
+			path = Guavapay3DS2;
+			sourceTree = "<group>";
+		};
+		18B6E1F5666C797A11E2BE03 = {
+			isa = PBXGroup;
+			children = (
+				EB6FA022FDF5831C6D162E11 /* Project */,
+				280289821F799A8274082E14 /* Frameworks */,
+				398BBCD5E4B06CA5006CCC40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20B0FECAB4F18569649603E9 /* BuildConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CD68A006F970DDC54469A /* Project-Debug.xcconfig */,
+				4DB91F58CF23E72636C69C41 /* Project-Release.xcconfig */,
+				A9CD7EC589C5CC6CE5CF9310 /* Guavapay3DS2-Debug.xcconfig */,
+				F8F6FFED1A0966A49B78F252 /* Guavapay3DS2-Release.xcconfig */,
+				5316D0759F7F2ED0BF1D3B2E /* Guavapay3DS2DemoUI-Debug.xcconfig */,
+				6940D75CA36F7DB9FB56196B /* Guavapay3DS2DemoUI-Release.xcconfig */,
+				0E3C05BE55CF3086738AA182 /* Guavapay3DS2DemoUITests-Debug.xcconfig */,
+				D7A9D36FEF7E97CF735D82B8 /* Guavapay3DS2DemoUITests-Release.xcconfig */,
+				F2BC7014D26158AC9D74CC67 /* Guavapay3DS2Tests-Debug.xcconfig */,
+				F5686FB8EFA3AE3B39F85BBC /* Guavapay3DS2Tests-Release.xcconfig */,
+			);
+			path = BuildConfigurations;
+			sourceTree = "<group>";
+		};
+		280289821F799A8274082E14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08D577934984712C20C5E903 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		398BBCD5E4B06CA5006CCC40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE4030C50383B488C97F4B56 /* Guavapay3DS2.framework */,
+				02D762271DBCC1AE80E0F9D4 /* Guavapay3DS2DemoUI.app */,
+				AA8A113E655E23381CB3BDA4 /* Guavapay3DS2DemoUITests.xctest */,
+				4EB746D4E46ABD2452A154AE /* Guavapay3DS2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47CD3B0E4EAA05F75DA05252 /* CertificateFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D8B7EE0F935EF44EB2EF7D45 /* amex.der */,
+				83838563F29179FB1E9F2E66 /* cartes-bancaires.der */,
+				04AB48F014A8D5BA56FEF463 /* discover.der */,
+				3E4C02D9D6978AD5C3D7E3D2 /* ec_test.der */,
+				1104D5855D28E49E104CA004 /* mastercard.der */,
+				B6275E7099E55F0C04688890 /* ul-test.der */,
+				A70071543985284E0D9DAC64 /* visa.der */,
+			);
+			path = CertificateFiles;
+			sourceTree = "<group>";
+		};
+		79E03C9F2FB6092200EE737F /* Guavapay3DS2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD446D5D3D8D07D491373E24 /* JSON */,
+				23A3DDCE911F8C43CF74CDF4 /* Info.plist */,
+				5EE8BF51F49E161737406B3A /* NSDictionary+DecodingHelpersTest.m */,
+				57B8822D21AADE7DA51931CC /* NSString+EmptyCheckingTests.m */,
+				6118F98576E9A39A7292C6C6 /* GPTDSACSNetworkingManagerTest.m */,
+				969DE2FA3845BB7939D3CD2E /* GPTDSAuthenticationRequestParametersTest.m */,
+				28E32DA72CAFBF2AF8099151 /* GPTDSAuthenticationResponseTests.m */,
+				4B1E3760B1369DB1A33C9DFE /* GPTDSBase64URLEncodingTests.m */,
+				89ED2133B61092FE1B478204 /* GPTDSChallengeParametersTests.m */,
+				4EAD29E57D206B5D6BAF9099 /* GPTDSChallengeRequestParametersTest.m */,
+				5E401845EE5759CCD30786AA /* GPTDSChallengeResponseObjectTest.m */,
+				5F551808E65CDADD9B3A9CB8 /* GPTDSConfigParametersTests.m */,
+				A4050F381183D6FDCC990D01 /* GPTDSDeviceInformationManagerTests.m */,
+				FC52C3C844BDA981EE34BAB9 /* GPTDSDeviceInformationParameterTests.m */,
+				6AA75957DD13FA92FA866AF3 /* GPTDSDirectoryServerCertificateTests.m */,
+				0DA1EE83D91993BCAF13EC72 /* GPTDSEllipticCurvePointTests.m */,
+				BF80634E06E8D6F598CFC667 /* GPTDSEphemeralKeyPairTests.m */,
+				278F2C40987F5218BD031E3D /* GPTDSErrorMessageTest.m */,
+				6B9B49A5CF64DCB23CD0AEDE /* GPTDSJSONEncoderTest.m */,
+				97505E93BE83F233E69BB5A9 /* GPTDSJSONWebEncryptionTests.m */,
+				E4C668442518B446D573AD24 /* GPTDSJSONWebSignatureTests.m */,
+				85D3C5B62DD39832004D61E8 /* GPTDSPackedSDKChallengeParametersTest.m */,
+				30D22985091381DFCDF077E9 /* GPTDSSecTypeUtilitiesTests.m */,
+				F02456AB660E709F332C0C7D /* GPTDSSynchronousLocationManagerTests.m */,
+				5FF3235EDD908CC1500399A1 /* GPTDSTestJSONUtils.m */,
+				7FF8ACC073E814B7DEBA7647 /* GPTDSThreeDS2ServiceTests.m */,
+				A4A3CCBE9A2E8C1A73D8214E /* GPTDSTransactionTest.m */,
+				CB3154597040B803ADE14F9E /* GPTDSUICustomizationTests.m */,
+				474F39AA3F47D84F8D54E5B7 /* GPTDSWarningTests.m */,
+			);
+			path = Guavapay3DS2Tests;
+			sourceTree = "<group>";
+		};
+		82BC8EB365BF993731432954 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				852649442DB67C9100C56781 /* Extensions */,
+				85499EB72DAD31D7007E22BA /* Models */,
+				852649332DB66EF500C56781 /* Views */,
+				85B03E4B2DC0D00900EECD0C /* ChallengeFlows */,
+				85C621F22DAD24170045185C /* AppDelegate.swift */,
+				850F4D532DAD26FD00244BBF /* DemoViewController.swift */,
+				850F4D552DAD28E500244BBF /* DemoViewController+TestObjects.swift */,
+				85C621F12DAD24000045185C /* Guavapay3DS2DemoUI-Bridging-Header.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		850556E22DB7966500C5381B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4869D6E14F01EDB960CB3065 /* GPTDSDeviceInformationParameter+Private.h */,
+				B015B937DD3657D62C61CE58 /* GPTDSDirectoryServerCertificate+Internal.h */,
+				52D6E4F76CBA258163E57DF3 /* GPTDSEphemeralKeyPair+Testing.h */,
+				5463EB1CC8E85BE3BD12DEFF /* GPTDSErrorMessage+Internal.h */,
+				2CB591796654445B8434A501 /* GPTDSErrorMessage+Internal.m */,
+				461F938CDE7ED6D06D9D2700 /* GPTDSException+Internal.h */,
+				47C29E9F3D2A62676B424CD1 /* GPTDSThreeDSProtocolVersion+Private.h */,
+				8A9F5C315222AFCD14C9342F /* GPTDSTransaction+Private.h */,
+				1FC15225A5E83948EF546B71 /* NSData+JWEHelpers.m */,
+				C78AA1D7AD2BAB52EE58D078 /* NSDictionary+DecodingHelpers.h */,
+				C566D6E444FCA4BCEC65F3D2 /* NSDictionary+DecodingHelpers.m */,
+				A6778F8CE36F769DF608F932 /* NSError+Guavapay3DS2.h */,
+				26C20D4B77372845627D6466 /* NSError+Guavapay3DS2.m */,
+				E0949399E96663964091C0EF /* NSLayoutConstraint+LayoutSupport.h */,
+				F99B290CF2B4987A4CFE5DCE /* NSLayoutConstraint+LayoutSupport.m */,
+				A8A77DB1C711B8696B2E5FEF /* NSString+EmptyChecking.h */,
+				D8D309E4FBE7E73D0BB83BF5 /* NSString+EmptyChecking.m */,
+				4DD55BECC3FB85216FE46218 /* UIButton+CustomInitialization.h */,
+				AA29B74DD3963B1205AA1C0C /* UIButton+CustomInitialization.m */,
+				4A567E08748C86FCE2A75FEA /* UIColor+DefaultColors.h */,
+				869733153BCA6BE2EB7A452F /* UIColor+DefaultColors.m */,
+				9A8B0001705400C661678617 /* UIColor+ThirteenSupport.h */,
+				37ED28756222539D37554CC7 /* UIColor+ThirteenSupport.m */,
+				1E844798B2733C8511AC080E /* UIFont+DefaultFonts.h */,
+				634095EA97A4E48BF7CAA03F /* UIFont+DefaultFonts.m */,
+				99CB2B66DBD356B5D222EDA9 /* UIView+LayoutSupport.h */,
+				8B0F0485B7048DDAA7DA8F9B /* UIView+LayoutSupport.m */,
+				8F72413F99F8E50FD0FA085D /* UIViewController+Guavapay3DS2.h */,
+				99451064136843047C7881AD /* UIViewController+Guavapay3DS2.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		852649332DB66EF500C56781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				852649492DB6828D00C56781 /* PaymentDetailsView.swift */,
+				852649382DB66FE300C56781 /* CardFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		852649442DB67C9100C56781 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				852649422DB67C7B00C56781 /* UIButton+Loading.swift */,
+				852649402DB67B3100C56781 /* UIViewController+Snackbar.swift */,
+				85742C4C2DAD65A000690F70 /* JSONDecoder+ISODate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		85499EB72DAD31D7007E22BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85B03E452DC0C3BC00EECD0C /* Step.swift */,
+				8596AB502DAFF81B004C44BD /* PostExecuteDTO.swift */,
+				85A1EA3A2DCA4DE40097FADD /* PutPaymentDTO.swift */,
+				8596AB512DAFF81B004C44BD /* ExecuteErrorDTO.swift */,
+				8596AB522DAFF81B004C44BD /* PostOrderDTO.swift */,
+				8596AB4E2DAFF799004C44BD /* GetOrderDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8594EC772E03043E00DBF99C /* SwiftGuavapay3DS2 */ = {
+			isa = PBXGroup;
+			children = (
+				858519BB2E031013000C6FCE /* Data+Base64.swift */,
+				8594EC852E03069900DBF99C /* String+Base64.swift */,
+				8594EC872E03072100DBF99C /* String+JWT.swift */,
+				8594EC762E03043E00DBF99C /* SwiftGuavapay3DS2.h */,
+			);
+			path = SwiftGuavapay3DS2;
+			sourceTree = "<group>";
+		};
+		8594EC9B2E0308EB00DBF99C /* SwiftGuavapay3DS2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8594EC9A2E0308EB00DBF99C /* SwiftGuavapay3DS2Tests.swift */,
+			);
+			path = SwiftGuavapay3DS2Tests;
+			sourceTree = "<group>";
+		};
+		85B03E4B2DC0D00900EECD0C /* ChallengeFlows */ = {
+			isa = PBXGroup;
+			children = (
+				85526F2F2DD1DFB5005DB15E /* ChallengeType.swift */,
+				85A1EA3C2DCA64160097FADD /* DemoFlowView.swift */,
+				8526493E2DB675A200C56781 /* DemoFlowViewController.swift */,
+				85B03E412DC0C32000EECD0C /* DemoFlowViewController+GPTDSChallengeResponseViewControllerDelegate.swift */,
+				85B03E432DC0C37600EECD0C /* DemoFlowViewController+GPTDSChallengeStatusReceiver.swift */,
+				85B03E472DC0CEF800EECD0C /* DemoFlowViewController+Constants.swift */,
+				85B03E492DC0CFE300EECD0C /* DemoFlowViewController+Helpers.swift */,
+			);
+			path = ChallengeFlows;
+			sourceTree = "<group>";
+		};
+		8CF6AFFC9FD5638E0D1E988E /* Guavapay3DS2DemoUI */ = {
+			isa = PBXGroup;
+			children = (
+				98160E2F8248A228E5EC73F8 /* Resources */,
+				82BC8EB365BF993731432954 /* Sources */,
+				037C294011A01E4B4DCE5BB7 /* Info.plist */,
+			);
+			path = Guavapay3DS2DemoUI;
+			sourceTree = "<group>";
+		};
+		98160E2F8248A228E5EC73F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				852F7BEF2DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets */,
+				310E6B4E2C52C9EF006A03EC /* 150-issuer.png */,
+				310E6B502C52C9EF006A03EC /* 150-payment.png */,
+				310E6B4F2C52C9EF006A03EC /* 300-issuer.png */,
+				310E6B512C52C9EF006A03EC /* 300-payment.png */,
+				310E6B522C52C9EF006A03EC /* 450-issuer.png */,
+				310E6B532C52C9EF006A03EC /* 450-payment.png */,
+				7971EB56716D5E2F59053B6D /* acs_challenge.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3DDF4E193616FA951B1B120 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47CD3B0E4EAA05F75DA05252 /* CertificateFiles */,
+				F31A6580385C6390910AFD93 /* Localizable.strings */,
+				9E1CB633CA5917B2168BB928 /* Guavapay3DS2.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD446D5D3D8D07D491373E24 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				237977B021FE538E5E4FA35C /* ARes.json */,
+				8C6D262891811FB3FE0C947E /* CRes.json */,
+				F2D0DB022D4825C600DA26AD /* HTMLCRes.json */,
+				E12798864D5CFFB7157D4CF5 /* ErrorMessage.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		C169A9439FD628D620B218AA /* Guavapay3DS2DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8528BC582DAFB6E9003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift */,
+				00658E077ECB223C90484AF7 /* Info.plist */,
+				8528BC5A2DAFB6F6003D4C50 /* Guavapay3DS2DemoUITests-Bridging-Header.h */,
+			);
+			path = Guavapay3DS2DemoUITests;
+			sourceTree = "<group>";
+		};
+		E4F3BE80D5F61EAC1694F954 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1F1FD11407319293954C6D81 /* GPTDSAlreadyInitializedException.h */,
+				27AC486DA2A80A43C1F517B2 /* GPTDSAlreadyInitializedException.m */,
+				3AD384AD2C76634D009AB784 /* GPTDSAnalyticsDelegate.h */,
+				C91B239583899192C7B26FCF /* GPTDSAuthenticationRequestParameters.h */,
+				AB871F64FC72EBC7A91F96C1 /* GPTDSAuthenticationRequestParameters.m */,
+				4EA4AB3BA2FB41B3D5F38978 /* GPTDSAuthenticationResponse.h */,
+				BD94CAE01A17E083E5617E56 /* GPTDSButtonCustomization.h */,
+				5489DCAA65624C6F966816B6 /* GPTDSButtonCustomization.m */,
+				D03B98D5861739833B197D8F /* GPTDSChallengeParameters.h */,
+				23C929BF760735CC01E1E8F5 /* GPTDSChallengeParameters.m */,
+				B7A75140FB62A71261CAF5EC /* GPTDSChallengeStatusReceiver.h */,
+				10DB3CD8F2541AC06681F2C8 /* GPTDSCompletionEvent.h */,
+				3B6B71C61CF5ADC7796441F5 /* GPTDSCompletionEvent.m */,
+				A1BFB8640032796CDA016765 /* GPTDSConfigParameters.h */,
+				89B5ED899439D1C1054CB448 /* GPTDSConfigParameters.m */,
+				AFF187D1D58405C736474042 /* GPTDSCustomization.h */,
+				A8E62EC973FC5C9905A40CA8 /* GPTDSCustomization.m */,
+				645D0BB927B7F8A0D37EE04D /* GPTDSErrorMessage.h */,
+				6DDB6222A2EF31FDB7592368 /* GPTDSErrorMessage.m */,
+				B71A1C110DCC23A9CE929837 /* GPTDSException.h */,
+				6F030410FDABFF833CD8FE46 /* GPTDSException.m */,
+				BA96C9FFA48B85F9C42E8C68 /* GPTDSFooterCustomization.h */,
+				6CFF141AC98F213122D037C6 /* GPTDSFooterCustomization.m */,
+				AE53BAA72835AFA3B35C58D3 /* GPTDSGuavapay3DS2Error.h */,
+				9F4376BB07FD1EE783249AED /* GPTDSGuavapay3DS2Error.m */,
+				853A361AB630A2BD402D1B47 /* GPTDSInvalidInputException.h */,
+				6FDAC320458399141EB161E2 /* GPTDSInvalidInputException.m */,
+				B219360BFB325779485BF702 /* GPTDSJSONDecodable.h */,
+				E6A3C5D4C46E681B7D76B2BA /* GPTDSJSONEncodable.h */,
+				06C5207432FB07BD71703BCC /* GPTDSJSONEncoder.h */,
+				0681C043F732148587737233 /* GPTDSJSONEncoder.m */,
+				6932DD26C7C16938DFA0E198 /* GPTDSLabelCustomization.h */,
+				01D320CD5ADA49F17B8BC1B0 /* GPTDSLabelCustomization.m */,
+				E1630D876436E43547FF69CE /* GPTDSNavigationBarCustomization.h */,
+				E9F1A5A8E5922748A9BEC724 /* GPTDSNavigationBarCustomization.m */,
+				2FCABBF51CBA7F9FEF757B4C /* GPTDSNotInitializedException.h */,
+				B7BD1E24EA9427121E148DFC /* GPTDSNotInitializedException.m */,
+				3A6D20D1DAB7D769E5E97528 /* GPTDSProtocolErrorEvent.h */,
+				3255706D2304FB551C97305F /* GPTDSProtocolErrorEvent.m */,
+				DE7D85369E012B15702D8DF9 /* GPTDSRuntimeErrorEvent.h */,
+				1501A7A3010FFE53D00E318F /* GPTDSRuntimeErrorEvent.m */,
+				B8619CA38E2A5B49DBF8546B /* GPTDSRuntimeException.h */,
+				CD33421F13A675DCFE597FFB /* GPTDSRuntimeException.m */,
+				7CD753D9BBFC378C1B491B00 /* GPTDSSelectionCustomization.h */,
+				43540AB7D13C0C9A563C3F4D /* GPTDSSelectionCustomization.m */,
+				E5BC34A661D9080A2EE239F8 /* GPTDSSwiftTryCatch.h */,
+				9946D28A86E85A6C84EB6C7B /* GPTDSSwiftTryCatch.m */,
+				68ED2A0E11E1B27980E0C60A /* GPTDSTextFieldCustomization.h */,
+				97163B5E9598CA3A298920B9 /* GPTDSTextFieldCustomization.m */,
+				5EAA444FA7C82BDA4AD907BF /* GPTDSThreeDS2Service.h */,
+				77646CEC7EE754F47EDBDA4F /* GPTDSThreeDS2Service.m */,
+				5E6A9565E97DF2544254AA94 /* GPTDSThreeDSProtocolVersion.h */,
+				F40CC91AA69F5296B0AA985C /* GPTDSTransaction.h */,
+				5FDE2481364C454058BF2377 /* GPTDSTransaction.m */,
+				210B22FF4DCB0C6E7C763EAB /* GPTDSUICustomization.h */,
+				A55B2474CD1A39D70869B75B /* GPTDSUICustomization.m */,
+				0BEB5006261C5E070FEE62BF /* GPTDSWarning.h */,
+				A502CCC5190F6B642EEC0CE6 /* GPTDSWarning.m */,
+				28C6B4F6BA431B9342970FD6 /* Guavapay3DS2.h */,
+				018F4AA25D84E9CBD2546BB5 /* NSString+JWEHelpers.h */,
+				43CB8F416E4F4CEA34391481 /* NSString+JWEHelpers.m */,
+				5B05A609753EE71502409082 /* NSData+JWEHelpers.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EB6FA022FDF5831C6D162E11 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				20B0FECAB4F18569649603E9 /* BuildConfigurations */,
+				148D1BA6A2E8B2B60CA9951F /* Guavapay3DS2 */,
+				8CF6AFFC9FD5638E0D1E988E /* Guavapay3DS2DemoUI */,
+				C169A9439FD628D620B218AA /* Guavapay3DS2DemoUITests */,
+				79E03C9F2FB6092200EE737F /* Guavapay3DS2Tests */,
+				8594EC772E03043E00DBF99C /* SwiftGuavapay3DS2 */,
+				8594EC9B2E0308EB00DBF99C /* SwiftGuavapay3DS2Tests */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A8117E5A795D5342E5AEF24C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3192FCC841152A7E5E6F19D6 /* GPTDSAlreadyInitializedException.h in Headers */,
+				9673946B78A7763070E05CD0 /* GPTDSAuthenticationRequestParameters.h in Headers */,
+				435EFC9119D4B42B2C6A6F88 /* GPTDSAuthenticationResponse.h in Headers */,
+				EC51189277D7D68D08C2A65C /* GPTDSButtonCustomization.h in Headers */,
+				DC0D9A57F2E312663C088FB8 /* GPTDSChallengeParameters.h in Headers */,
+				72F430506E684D61BD5CFE3B /* GPTDSChallengeStatusReceiver.h in Headers */,
+				8E27285FE76F8BECFD70286D /* GPTDSCompletionEvent.h in Headers */,
+				DC32281BF0847A98B100C3A1 /* GPTDSConfigParameters.h in Headers */,
+				F04482C663F6DF8E522B0833 /* GPTDSCustomization.h in Headers */,
+				2BBA82878804711E06CBFCCB /* GPTDSErrorMessage.h in Headers */,
+				24D49F833E1ED28DE557F219 /* GPTDSException.h in Headers */,
+				79557307ECD48D17C566997A /* GPTDSFooterCustomization.h in Headers */,
+				4E35267801D94FB84816C519 /* GPTDSInvalidInputException.h in Headers */,
+				9B32E9A4CD2BDA61C730F5EB /* GPTDSJSONDecodable.h in Headers */,
+				890E22971E6F7B0FA1C8D649 /* GPTDSJSONEncodable.h in Headers */,
+				2224463CE5FB99D4BEE6A479 /* GPTDSJSONEncoder.h in Headers */,
+				0BA0F0CADC4CFF419E1F7EFC /* GPTDSLabelCustomization.h in Headers */,
+				3B430F172A3AD6AA9AFDFC04 /* GPTDSNavigationBarCustomization.h in Headers */,
+				2CB6DF5CCCBC1EB9ABD03143 /* GPTDSNotInitializedException.h in Headers */,
+				67D431374DECE36B2606D944 /* GPTDSProtocolErrorEvent.h in Headers */,
+				15D4A2F07EA477B84CD48B15 /* GPTDSRuntimeErrorEvent.h in Headers */,
+				2C6DB6516699B4EFADDF3360 /* GPTDSRuntimeException.h in Headers */,
+				F5513045A25210C524A05DF5 /* GPTDSSelectionCustomization.h in Headers */,
+				335553A547A3CA80B3901CCF /* GPTDSGuavapay3DS2Error.h in Headers */,
+				85093DF72DC27E0F00328311 /* GPTDSPackedSDKChallengeParameters.h in Headers */,
+				DE32EAA8F5C2645652FCFB48 /* GPTDSSwiftTryCatch.h in Headers */,
+				4C267E9A30ADC18E71408ED5 /* GPTDSTextFieldCustomization.h in Headers */,
+				31C636A25BF83316EE7EB57D /* GPTDSThreeDS2Service.h in Headers */,
+				847926A68A88BEB58C92D9BC /* GPTDSThreeDSProtocolVersion.h in Headers */,
+				9DC5612697835A383DC6606E /* GPTDSTransaction.h in Headers */,
+				0615DD02C0B022AE207DADF0 /* GPTDSUICustomization.h in Headers */,
+				9F0F6085FBD892BF5F14CF86 /* GPTDSWarning.h in Headers */,
+				893713F4464A88FAB92BC2C6 /* Guavapay3DS2.h in Headers */,
+				3AD384AE2C76634D009AB784 /* GPTDSAnalyticsDelegate.h in Headers */,
+				425849564519D6454DDA3424 /* NSData+JWEHelpers.h in Headers */,
+				1134F81C7D015BA5EA52BFD1 /* NSDictionary+DecodingHelpers.h in Headers */,
+				3617B07ABD719F1A5F8302FA /* NSError+Guavapay3DS2.h in Headers */,
+				28AD7EC6F6DA2AECD7F61BA7 /* NSLayoutConstraint+LayoutSupport.h in Headers */,
+				30B25163BEDEB99CDD101B5F /* NSString+EmptyChecking.h in Headers */,
+				A5193DADCD0F48911F775D88 /* NSString+JWEHelpers.h in Headers */,
+				A78F19DA3D146A258FB9DE3C /* GPTDSACSNetworkingManager.h in Headers */,
+				2B2787A7103C0D0AB5F00B78 /* GPTDSAuthenticationResponseObject.h in Headers */,
+				458BC5A3D0E7B4D05549474F /* GPTDSBrandingView.h in Headers */,
+				97CE8B57A97D037E977E62F3 /* GPTDSBundleLocator.h in Headers */,
+				F13A032A4AF15BB61EA18A8D /* GPTDSChallengeInformationView.h in Headers */,
+				BF342613EE89845EB1C4B72A /* GPTDSChallengeRequestParameters.h in Headers */,
+				7337FB20DC0EF491B5922913 /* GPTDSChallengeResponse.h in Headers */,
+				85A1EA3F2DCA754C0097FADD /* GPTDSErrorBannerView.h in Headers */,
+				95A2D58051AADDBE16CCA0B6 /* GPTDSChallengeResponseImage.h in Headers */,
+				D819C341ECEE1EFE6FE66085 /* GPTDSChallengeResponseImageObject.h in Headers */,
+				793D61AD55630DD336A141A7 /* GPTDSChallengeResponseMessageExtension.h in Headers */,
+				48316C1AB1D9151C205A59A4 /* GPTDSChallengeResponseMessageExtensionObject.h in Headers */,
+				E90749131EDA0C86BBBFCE5C /* GPTDSChallengeResponseObject.h in Headers */,
+				3C8C3BCDDDDEF6B9E150D4E1 /* GPTDSChallengeResponseSelectionInfo.h in Headers */,
+				9C225B9C556C20D1A6F97180 /* GPTDSChallengeResponseSelectionInfoObject.h in Headers */,
+				9E46777893FA2D6691F496D7 /* GPTDSChallengeResponseViewController.h in Headers */,
+				E7E424C5264A4DE4A1EC19B6 /* GPTDSChallengeSelectionView.h in Headers */,
+				F28AD6CA8AB1A5DEE7A8F429 /* GPTDSDebuggerChecker.h in Headers */,
+				57E58A3B88D9EEB9FAE9B383 /* GPTDSDeviceInformation.h in Headers */,
+				9843F6AABF7B0A623E7DF979 /* GPTDSDeviceInformationManager.h in Headers */,
+				3844F0E21742F43BCB32499A /* GPTDSDeviceInformationParameter+Private.h in Headers */,
+				2938D9CC41899DC78D01EF9F /* GPTDSDeviceInformationParameter.h in Headers */,
+				C4BA75544A7F51355BF4B5F8 /* GPTDSDirectoryServer.h in Headers */,
+				DB96817598FCE73F5131437E /* GPTDSDirectoryServerCertificate+Internal.h in Headers */,
+				63AFB3C739DD987EE56F801F /* GPTDSDirectoryServerCertificate.h in Headers */,
+				5C83A3A4631E51EEECBEAA0F /* GPTDSEllipticCurvePoint.h in Headers */,
+				3343DA94A5032627843A343C /* GPTDSEphemeralKeyPair+Testing.h in Headers */,
+				B94E5A5BF5F22998E4CA9ED3 /* GPTDSEphemeralKeyPair.h in Headers */,
+				34256504F0E0E519D586B7CE /* GPTDSErrorMessage+Internal.h in Headers */,
+				85A1EA392DC9170E0097FADD /* GPTDSChallengeResponseViewControllerDelegate.h in Headers */,
+				149FE0C2910F08910B250BD8 /* GPTDSException+Internal.h in Headers */,
+				F35963DB86D90320CFA7BCB9 /* GPTDSExpandableInformationView.h in Headers */,
+				DDB98914E1135E8D445545C8 /* GPTDSIPAddress.h in Headers */,
+				613EF855524F7861A6DDD8C1 /* GPTDSImageLoader.h in Headers */,
+				D3432C5BF5211A60D5C15D9E /* GPTDSIntegrityChecker.h in Headers */,
+				319DD1C82B0D50FF0083BA32 /* GPTDSVisionSupport.h in Headers */,
+				4C573A44AB0A9CB28D76C621 /* GPTDSJSONWebEncryption.h in Headers */,
+				CA617B6F5CDFB8FDEEE38636 /* GPTDSJSONWebSignature.h in Headers */,
+				7C7073B54628ED836F422F1D /* GPTDSJailbreakChecker.h in Headers */,
+				8E0501C3BB849C2D2D99F34E /* GPTDSLocalizedString.h in Headers */,
+				68F314D63323954EFE309E49 /* GPTDSOSVersionChecker.h in Headers */,
+				09F0B1945CC12FB1215119FD /* GPTDSProcessingView.h in Headers */,
+				511513A9180F9835B08CBE56 /* GPTDSProgressViewController.h in Headers */,
+				CEA1EB91858043A837638FE0 /* GPTDSSecTypeUtilities.h in Headers */,
+				D9F8BA88953A91DC082FA6DA /* GPTDSSelectionButton.h in Headers */,
+				AC474013841CE1DED97F3FA8 /* GPTDSSimulatorChecker.h in Headers */,
+				AA94519687902E34E5243AEA /* GPTDSSpacerView.h in Headers */,
+				206B93BDE91CFED74A053B87 /* GPTDSStackView.h in Headers */,
+				F0B9EFD359B1AB28A695CB48 /* GPTDSSynchronousLocationManager.h in Headers */,
+				859177F72DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.h in Headers */,
+				59756023104E4FB886B48936 /* GPTDSTextChallengeView.h in Headers */,
+				326AD1DD7BB8A2A6DA66EC67 /* GPTDSThreeDSProtocolVersion+Private.h in Headers */,
+				AE1894FEA510AC394DE73C4B /* GPTDSTransaction+Private.h in Headers */,
+				7EC8E5523F29B0F01FE827DB /* GPTDSWebView.h in Headers */,
+				825ACBE0734BDCE746E66AB0 /* GPTDSWhitelistView.h in Headers */,
+				75CDFDABD7F9813563E3F618 /* Guavapay3DS2-Bridging-Header.h in Headers */,
+				0A2BC6A9E388B242C46C09D9 /* UIButton+CustomInitialization.h in Headers */,
+				8322973CD09F2E1C88B6046E /* UIColor+DefaultColors.h in Headers */,
+				27F3EA1BB7E7B56A1A8524BA /* UIColor+ThirteenSupport.h in Headers */,
+				8E833B7FCBC3A99072582FEA /* UIFont+DefaultFonts.h in Headers */,
+				A026717FFF299A7C1C51565F /* UIView+LayoutSupport.h in Headers */,
+				41246FCC0695BABE1489C53E /* UIViewController+Guavapay3DS2.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57AEC53510AE0DC0539730F3 /* Guavapay3DS2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9BBB6FD4175090CFCAA126 /* Build configuration list for PBXNativeTarget "Guavapay3DS2" */;
+			buildPhases = (
+				A8117E5A795D5342E5AEF24C /* Headers */,
+				559A957A4AA29D178C3E3D8F /* Sources */,
+				563147EAF54FC4A425A06D46 /* Resources */,
+				726DD7176204D90BD7552B84 /* Embed Frameworks */,
+				C65BFA70E847549921E39F4E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Guavapay3DS2;
+			productName = Guavapay3DS2;
+			productReference = CE4030C50383B488C97F4B56 /* Guavapay3DS2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5907C55B1F111921112DF2BF /* Guavapay3DS2DemoUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37237B2A5629D2257C454AD1 /* Build configuration list for PBXNativeTarget "Guavapay3DS2DemoUI" */;
+			buildPhases = (
+				5D618F152EF19018F5C7E579 /* Sources */,
+				C4175027D57AF53025CB9719 /* Resources */,
+				00E415680C602ED1D6D8E71F /* Embed Frameworks */,
+				8ECF69FED0DDA991C821CF6A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85F9416E2DDCCFA500CA54F4 /* PBXTargetDependency */,
+				C7515969CD69027C276886AB /* PBXTargetDependency */,
+			);
+			name = Guavapay3DS2DemoUI;
+			productName = Guavapay3DS2DemoUI;
+			productReference = 02D762271DBCC1AE80E0F9D4 /* Guavapay3DS2DemoUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DA168BC86CE957505FA091B /* Guavapay3DS2DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F64A3CED17753DA2643AA63 /* Build configuration list for PBXNativeTarget "Guavapay3DS2DemoUITests" */;
+			buildPhases = (
+				7A43CA17E1E2D826DCBDD88D /* Sources */,
+				F3AE035E64AB50AB8B90A58E /* Resources */,
+				58FA2FE74AE67CD3CDAFD7E5 /* Embed Frameworks */,
+				A56B40D43D552FDE77670CB5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE2FB81071258D69C9FCAD4 /* PBXTargetDependency */,
+				026B55E92602E24EE7139E1F /* PBXTargetDependency */,
+			);
+			name = Guavapay3DS2DemoUITests;
+			packageProductDependencies = (
+				0118969F6608A92583CC6C98 /* iOSSnapshotTestCase */,
+				8528BC562DAFB568003D4C50 /* iOSSnapshotTestCase */,
+			);
+			productName = Guavapay3DS2DemoUITests;
+			productReference = AA8A113E655E23381CB3BDA4 /* Guavapay3DS2DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2D50FA32F27498F56CD08DD /* Guavapay3DS2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271DFDD5ABBB719F3BD1AB56 /* Build configuration list for PBXNativeTarget "Guavapay3DS2Tests" */;
+			buildPhases = (
+				0D8CCC419762E2FD4F945EB0 /* Sources */,
+				4FDEAB55B960B360B76B3F41 /* Resources */,
+				43B749EC915FB6D2FF5ABEE0 /* Embed Frameworks */,
+				16B0A41D6C0F157DDF229397 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				798525809F1F67D0C6634927 /* PBXTargetDependency */,
+			);
+			name = Guavapay3DS2Tests;
+			productName = Guavapay3DS2Tests;
+			productReference = 4EB746D4E46ABD2452A154AE /* Guavapay3DS2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D219187B704575AD3CD3EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1620;
+				TargetAttributes = {
+					57AEC53510AE0DC0539730F3 = {
+						LastSwiftMigration = 1620;
+					};
+					5907C55B1F111921112DF2BF = {
+						LastSwiftMigration = 1620;
+					};
+					7DA168BC86CE957505FA091B = {
+						LastSwiftMigration = 1620;
+						TestTargetID = 5907C55B1F111921112DF2BF;
+					};
+				};
+			};
+			buildConfigurationList = 57B08C966701355644CF5CEB /* Build configuration list for PBXProject "Guavapay3DS2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"bg-BG",
+				"ca-ES",
+				"cs-CZ",
+				da,
+				de,
+				"el-GR",
+				en,
+				"en-GB",
+				es,
+				"es-419",
+				"et-EE",
+				fi,
+				fil,
+				fr,
+				"fr-CA",
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				"lt-LT",
+				"lv-LV",
+				"ms-MY",
+				mt,
+				nb,
+				nl,
+				"nn-NO",
+				"pl-PL",
+				"pt-BR",
+				"pt-PT",
+				"ro-RO",
+				ru,
+				"sk-SK",
+				"sl-SI",
+				sv,
+				tr,
+				vi,
+				"zh-HK",
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 18B6E1F5666C797A11E2BE03;
+			packageReferences = (
+				8528BC552DAFB568003D4C50 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+				85F9416C2DDCCF7400CA54F4 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
+			productRefGroup = 398BBCD5E4B06CA5006CCC40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57AEC53510AE0DC0539730F3 /* Guavapay3DS2 */,
+				F2D50FA32F27498F56CD08DD /* Guavapay3DS2Tests */,
+				5907C55B1F111921112DF2BF /* Guavapay3DS2DemoUI */,
+				7DA168BC86CE957505FA091B /* Guavapay3DS2DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FDEAB55B960B360B76B3F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B16918BF5F67B0F5FB1AFD5 /* ARes.json in Resources */,
+				F4E8353A470750D9BCEA3CD8 /* CRes.json in Resources */,
+				E7A72BB7CC8DE8DA7FA0DEC5 /* ErrorMessage.json in Resources */,
+				F2D0DB032D4825C600DA26AD /* HTMLCRes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563147EAF54FC4A425A06D46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97E1DF84D381952A0FB4C1C /* amex.der in Resources */,
+				EA89021709AFB5F04961EB78 /* cartes-bancaires.der in Resources */,
+				3D674B4EE5ABACD65EB21A1E /* discover.der in Resources */,
+				FD6456BD86F07C446B9FB6C8 /* ec_test.der in Resources */,
+				081347606D48F64161D95B45 /* mastercard.der in Resources */,
+				81B1C12449852CEB3C59793F /* ul-test.der in Resources */,
+				125427F1322501AA12EAEBE6 /* visa.der in Resources */,
+				2D42EA44FC01C834209CFED4 /* Guavapay3DS2.xcassets in Resources */,
+				31CDFC322BA8E58100B3DD91 /* PrivacyInfo.xcprivacy in Resources */,
+				6BA3F565B6C0B78F6DED8826 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4175027D57AF53025CB9719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C20B044ACFD3A50FD4AC9A8 /* acs_challenge.html in Resources */,
+				310E6B542C52C9EF006A03EC /* 150-issuer.png in Resources */,
+				310E6B592C52C9EF006A03EC /* 450-payment.png in Resources */,
+				310E6B552C52C9EF006A03EC /* 300-issuer.png in Resources */,
+				852F7BF02DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets in Resources */,
+				310E6B572C52C9EF006A03EC /* 300-payment.png in Resources */,
+				310E6B582C52C9EF006A03EC /* 450-issuer.png in Resources */,
+				310E6B562C52C9EF006A03EC /* 150-payment.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE035E64AB50AB8B90A58E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D8CCC419762E2FD4F945EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B426123CC7FCA337E13304F9 /* NSDictionary+DecodingHelpersTest.m in Sources */,
+				E73028FD4537F6E48F927127 /* NSString+EmptyCheckingTests.m in Sources */,
+				D1427392DA8AD8F5B4118781 /* GPTDSACSNetworkingManagerTest.m in Sources */,
+				A33A549CF12209280E3B1DBA /* GPTDSAuthenticationRequestParametersTest.m in Sources */,
+				5DAC25EBAB19555229654E44 /* GPTDSAuthenticationResponseTests.m in Sources */,
+				A56AE2CD941D7ADAC7FC8BCC /* GPTDSBase64URLEncodingTests.m in Sources */,
+				D63E3DDC92DD46062A265D86 /* GPTDSChallengeParametersTests.m in Sources */,
+				4A9423CC79312BC3A0DEC38B /* GPTDSChallengeRequestParametersTest.m in Sources */,
+				ECF8755D2602E0E06DCB3210 /* GPTDSChallengeResponseObjectTest.m in Sources */,
+				32BE38D04DD76CA4490389C6 /* GPTDSConfigParametersTests.m in Sources */,
+				B1C2AA6259CE34B0042A1FB1 /* GPTDSDeviceInformationManagerTests.m in Sources */,
+				2B09B7FDF8C4AA551F7EE18E /* GPTDSDeviceInformationParameterTests.m in Sources */,
+				E4DA2CE8DC8C60DE40222185 /* GPTDSDirectoryServerCertificateTests.m in Sources */,
+				9F52F67A1A3A2199AEA598FC /* GPTDSEllipticCurvePointTests.m in Sources */,
+				BFC5852E14724750E70DA2A6 /* GPTDSEphemeralKeyPairTests.m in Sources */,
+				1767509FDC216602A5E43F0E /* GPTDSErrorMessageTest.m in Sources */,
+				D189220981C7705913D93687 /* GPTDSJSONEncoderTest.m in Sources */,
+				98075195759ABB91B0D19847 /* GPTDSJSONWebEncryptionTests.m in Sources */,
+				4C0E13298F08D391FE8600CF /* GPTDSJSONWebSignatureTests.m in Sources */,
+				480CD62EC91F4796D1D8D8DC /* GPTDSSecTypeUtilitiesTests.m in Sources */,
+				BA65731CDB75C3124834586C /* GPTDSSynchronousLocationManagerTests.m in Sources */,
+				EA19A7AEC298F3EC010D1199 /* GPTDSTestJSONUtils.m in Sources */,
+				D927789F89B413C08DE4D388 /* GPTDSThreeDS2ServiceTests.m in Sources */,
+				9B7081D378D1441B98B81207 /* GPTDSTransactionTest.m in Sources */,
+				83878337274D8C43D492EC45 /* GPTDSUICustomizationTests.m in Sources */,
+				85D3C5B72DD39838004D61E8 /* GPTDSPackedSDKChallengeParametersTest.m in Sources */,
+				30632F7C730BF8D23B607CF7 /* GPTDSWarningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559A957A4AA29D178C3E3D8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CAD8276ED8057A760147CB /* NSData+JWEHelpers.m in Sources */,
+				0D4B42EC5019D213BDBC84E7 /* NSDictionary+DecodingHelpers.m in Sources */,
+				85093DF52DC27DA300328311 /* GPTDSPackedSDKChallengeParameters.m in Sources */,
+				089DAFECA444861762781974 /* NSError+Guavapay3DS2.m in Sources */,
+				9ED9C602C10682CD5DD91C12 /* NSLayoutConstraint+LayoutSupport.m in Sources */,
+				DEEF260365A4D9B0D83E557D /* NSString+EmptyChecking.m in Sources */,
+				88197445522F39DB1E9F6AE7 /* NSString+JWEHelpers.m in Sources */,
+				B31168F5FEC3464AC212DB85 /* GPTDSACSNetworkingManager.m in Sources */,
+				5FE5FB933E2651C8D84FA477 /* GPTDSAuthenticationResponseObject.m in Sources */,
+				75150C4678B8207AA6E7D969 /* GPTDSBrandingView.m in Sources */,
+				8233B9F131602DD7143FF96F /* GPTDSBundleLocator.m in Sources */,
+				14BDBD98F8E15576403255C9 /* GPTDSChallengeInformationView.m in Sources */,
+				2970D4880EBFAEFABA2E8EBD /* GPTDSChallengeRequestParameters.m in Sources */,
+				2AB06EC20B22306F1DDF9F4B /* GPTDSChallengeResponseImageObject.m in Sources */,
+				85EF60E22DB78E0F00AD887B /* GPTDSResendButton.m in Sources */,
+				B9A456E52E62E9DAE9F424A7 /* GPTDSChallengeResponseMessageExtensionObject.m in Sources */,
+				09DFAF7B38EAB76BC66AC9C8 /* GPTDSChallengeResponseObject.m in Sources */,
+				AA4D157F31A246890D446981 /* GPTDSChallengeResponseSelectionInfoObject.m in Sources */,
+				CCC376FE7424029342A8D15E /* GPTDSChallengeResponseViewController.m in Sources */,
+				4FE8C076102C195D609977F5 /* GPTDSChallengeSelectionView.m in Sources */,
+				85EF60E42DB78ED500AD887B /* GPTDSResendButton.h in Sources */,
+				A6909D6C1A68963504733939 /* GPTDSDebuggerChecker.m in Sources */,
+				E630DCBBEFAAD0435BEF989C /* GPTDSDeviceInformation.m in Sources */,
+				3F2624C33291FCE00D596768 /* GPTDSDeviceInformationManager.m in Sources */,
+				0EEFDE04392FD017EA0A017A /* GPTDSDeviceInformationParameter.m in Sources */,
+				9F9BB9E7FA18FEDA44F7042E /* GPTDSDirectoryServerCertificate.m in Sources */,
+				6B3AA85EE71FC42EF9BD999F /* GPTDSEllipticCurvePoint.m in Sources */,
+				05647ABCFBDBE1209D5044AC /* GPTDSEphemeralKeyPair.m in Sources */,
+				2E2022723BC7A4B2DD5ECE76 /* GPTDSErrorMessage+Internal.m in Sources */,
+				4142A3AB3E384F91A1E5550B /* GPTDSExpandableInformationView.m in Sources */,
+				9146B2E3B89EF3F489D7E233 /* GPTDSIPAddress.m in Sources */,
+				136255493F3F0E930FBA8606 /* GPTDSImageLoader.m in Sources */,
+				EB791827A943AA61976D8C29 /* GPTDSIntegrityChecker.m in Sources */,
+				955CBE0C979291F89567D8A7 /* GPTDSJSONWebEncryption.m in Sources */,
+				859177F82DB2B29F00BC3AA2 /* GPTDSProcessingSpinnerView.m in Sources */,
+				EFC72E766F9FD4EE18D309BC /* GPTDSJSONWebSignature.m in Sources */,
+				BA00D11D792C99B7D5749F59 /* GPTDSJailbreakChecker.m in Sources */,
+				602C526C0B52DF81846DA664 /* GPTDSOSVersionChecker.m in Sources */,
+				574A7976213046F02F7F60C4 /* GPTDSProcessingView.m in Sources */,
+				1156B25EBE0135B627E174D2 /* GPTDSProgressViewController.m in Sources */,
+				DBDB8B56FFF5C4234705E698 /* GPTDSSecTypeUtilities.m in Sources */,
+				D41F091BE1579B801D1BBC20 /* GPTDSSelectionButton.m in Sources */,
+				4518AD83580FC222B883DAFB /* GPTDSSimulatorChecker.m in Sources */,
+				3F30A8F418870D176A626F00 /* GPTDSSpacerView.m in Sources */,
+				3909D8028AC485BCCF17B48B /* GPTDSStackView.m in Sources */,
+				E0644CE0260178023E643B23 /* GPTDSSynchronousLocationManager.m in Sources */,
+				D5706ACF84F0A993CE1885D4 /* GPTDSTextChallengeView.m in Sources */,
+				1B20B454D0C309613A1FAF68 /* GPTDSThreeDSProtocolVersion.m in Sources */,
+				884D59AF7FD70889276AFC02 /* GPTDSWebView.m in Sources */,
+				E70CFDC59731BA62DD89906C /* GPTDSWhitelistView.m in Sources */,
+				A4CFDBFC3099BD7E1A694E3E /* UIButton+CustomInitialization.m in Sources */,
+				2086DFD1FC02783FB106AD35 /* UIColor+DefaultColors.m in Sources */,
+				E19C8104FC1A9BAEA0BE8A9D /* UIColor+ThirteenSupport.m in Sources */,
+				987347CA74818CEB716B9DB3 /* UIFont+DefaultFonts.m in Sources */,
+				390691CA0EAF81418B0C65DB /* UIView+LayoutSupport.m in Sources */,
+				08ECC7E70E7478E76793ED1E /* UIViewController+Guavapay3DS2.m in Sources */,
+				D83D2FF20387FACC383A2A0F /* GPTDSAlreadyInitializedException.m in Sources */,
+				7ED98325E7E54A54BFE54D6C /* GPTDSAuthenticationRequestParameters.m in Sources */,
+				C430332104547BA508416B41 /* GPTDSButtonCustomization.m in Sources */,
+				6DB54DBAEFD08967367B6BF7 /* GPTDSChallengeParameters.m in Sources */,
+				85A1EA412DCA75530097FADD /* GPTDSErrorBannerView.m in Sources */,
+				FD8A81873C3BC7579ED07460 /* GPTDSCompletionEvent.m in Sources */,
+				8A0872706BF4CDE72EF0C480 /* GPTDSConfigParameters.m in Sources */,
+				BF2651A9F3A31CB1AFEC44BB /* GPTDSCustomization.m in Sources */,
+				8C9BD4B150F384111CBD3BD3 /* GPTDSErrorMessage.m in Sources */,
+				3C88AE37A760B91E93D423CF /* GPTDSException.m in Sources */,
+				F569B584D357DC5C55542015 /* GPTDSFooterCustomization.m in Sources */,
+				EE3854BC2A14F87E8D51B0D0 /* GPTDSInvalidInputException.m in Sources */,
+				0D3D9C95CB14A610EAAAEF6E /* GPTDSJSONEncoder.m in Sources */,
+				EEE77034728D2CFE38CC5A85 /* GPTDSLabelCustomization.m in Sources */,
+				BB379E68231A7DA62F87E628 /* GPTDSNavigationBarCustomization.m in Sources */,
+				8A64AFBB2AC15E0E0F57ED25 /* GPTDSNotInitializedException.m in Sources */,
+				B51D1C218F460F67B58A1F0D /* GPTDSProtocolErrorEvent.m in Sources */,
+				64D05353B50FAF3BB76D6527 /* GPTDSRuntimeErrorEvent.m in Sources */,
+				01706B4660728A5BFAC12840 /* GPTDSRuntimeException.m in Sources */,
+				D3AA14D1E059E90F5A965CC4 /* GPTDSSelectionCustomization.m in Sources */,
+				2C5621AABECF6192F92A20CF /* GPTDSGuavapay3DS2Error.m in Sources */,
+				4E4E4BC1E2D041FA530336EE /* GPTDSSwiftTryCatch.m in Sources */,
+				284F72D3FD8C06C0E5974086 /* GPTDSTextFieldCustomization.m in Sources */,
+				24F626CD0F93B7AF59B1D6AA /* GPTDSThreeDS2Service.m in Sources */,
+				6E727D2B738D7A3527952D28 /* GPTDSTransaction.m in Sources */,
+				DF4D38DC0AF89EAAA8718AAE /* GPTDSUICustomization.m in Sources */,
+				E08AF96E690D75F6AB52021F /* GPTDSWarning.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D618F152EF19018F5C7E579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85526F302DD1DFB5005DB15E /* ChallengeType.swift in Sources */,
+				85C621F32DAD24170045185C /* AppDelegate.swift in Sources */,
+				852649412DB67B3100C56781 /* UIViewController+Snackbar.swift in Sources */,
+				8526494A2DB6829700C56781 /* PaymentDetailsView.swift in Sources */,
+				8596AB532DAFF81B004C44BD /* PostExecuteDTO.swift in Sources */,
+				85B03E462DC0C3BC00EECD0C /* Step.swift in Sources */,
+				8596AB542DAFF81B004C44BD /* PostOrderDTO.swift in Sources */,
+				85B03E482DC0CEFA00EECD0C /* DemoFlowViewController+Constants.swift in Sources */,
+				8596AB552DAFF81B004C44BD /* ExecuteErrorDTO.swift in Sources */,
+				85742C4D2DAD65A000690F70 /* JSONDecoder+ISODate.swift in Sources */,
+				858519C02E031294000C6FCE /* String+Base64.swift in Sources */,
+				858519BF2E03126D000C6FCE /* Data+Base64.swift in Sources */,
+				85A1EA3D2DCA64160097FADD /* DemoFlowView.swift in Sources */,
+				85B03E4A2DC0CFE600EECD0C /* DemoFlowViewController+Helpers.swift in Sources */,
+				85B03E442DC0C37600EECD0C /* DemoFlowViewController+GPTDSChallengeStatusReceiver.swift in Sources */,
+				852649392DB66FE300C56781 /* CardFormView.swift in Sources */,
+				85A1EA3B2DCA4DE40097FADD /* PutPaymentDTO.swift in Sources */,
+				850F4D542DAD26FD00244BBF /* DemoViewController.swift in Sources */,
+				858519C12E03129A000C6FCE /* String+JWT.swift in Sources */,
+				8526493F2DB675AC00C56781 /* DemoFlowViewController.swift in Sources */,
+				85B03E422DC0C32000EECD0C /* DemoFlowViewController+GPTDSChallengeResponseViewControllerDelegate.swift in Sources */,
+				852649432DB67C7B00C56781 /* UIButton+Loading.swift in Sources */,
+				8596AB4F2DAFF7B2004C44BD /* GetOrderDTO.swift in Sources */,
+				850F4D562DAD28E500244BBF /* DemoViewController+TestObjects.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A43CA17E1E2D826DCBDD88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8528BC592DAFB6F5003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		026B55E92602E24EE7139E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Guavapay3DS2DemoUI;
+			target = 5907C55B1F111921112DF2BF /* Guavapay3DS2DemoUI */;
+			targetProxy = 35B6793A7F3FB130F40209F1 /* PBXContainerItemProxy */;
+		};
+		0AE2FB81071258D69C9FCAD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Guavapay3DS2;
+			target = 57AEC53510AE0DC0539730F3 /* Guavapay3DS2 */;
+			targetProxy = 52E1EB51359DA6E75D851D71 /* PBXContainerItemProxy */;
+		};
+		798525809F1F67D0C6634927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Guavapay3DS2;
+			target = 57AEC53510AE0DC0539730F3 /* Guavapay3DS2 */;
+			targetProxy = 6C355B127D670833C76237D3 /* PBXContainerItemProxy */;
+		};
+		85F9416E2DDCCFA500CA54F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 85F9416D2DDCCFA500CA54F4 /* SwiftLintBuildToolPlugin */;
+		};
+		C7515969CD69027C276886AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Guavapay3DS2;
+			target = 57AEC53510AE0DC0539730F3 /* Guavapay3DS2 */;
+			targetProxy = 947ED275EAB25AD4CD701936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F31A6580385C6390910AFD93 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A6035A8211B3D50D10EB947 /* bg-BG */,
+				40DC4913154C3D3A27E35207 /* ca-ES */,
+				7859D635964B2854A07B5285 /* cs-CZ */,
+				8B8D429F1C03603DB218700F /* da */,
+				2C2666DF7D23EBC3FFE7CCF1 /* de */,
+				4C158B552B0CBE635A2AF7BB /* el-GR */,
+				EF5219762616ACF204F08C19 /* en */,
+				F112967E9FE8EE02FFFDC313 /* en-GB */,
+				1BBADD412A7C2D1FF35A7C86 /* es */,
+				406D88ADED27D64DED2002A2 /* es-419 */,
+				461FDC130846625171164A9E /* et-EE */,
+				F139E48FDEFD921FF410892F /* fi */,
+				49EF79D69693F937FEC46906 /* fil */,
+				4BC4D9FD1D3869D491CC2CF8 /* fr */,
+				E64C700DED163CB77DCDEA78 /* fr-CA */,
+				0E38A775DB9F529427E900CF /* hr */,
+				371F8076630A8839C1F6A508 /* hu */,
+				62773D5C85C567F28BCE0DA5 /* id */,
+				13ED1CC076C6B3FB49C9197A /* it */,
+				157970FF5B4A817041E3D668 /* ja */,
+				F86F34D1339F7467D0FDAC75 /* ko */,
+				71494F94F36F4B731A27D182 /* lt-LT */,
+				38572D4E32BF3670F1C83409 /* lv-LV */,
+				B1A7D41498B79E35BD724681 /* ms-MY */,
+				18D88DE3E34106F934015BF9 /* mt */,
+				6B487D8DD39DAC17042A3F04 /* nb */,
+				83BDD516620860DC08B36B96 /* nl */,
+				D3F5A6D5A680F008C00A2D69 /* nn-NO */,
+				FE1DE9D978E6E682CB094128 /* pl-PL */,
+				6690476C1BEA59C37576FB36 /* pt-BR */,
+				BC3EE020DC9358FF56389BBE /* pt-PT */,
+				F4D6DB90E3D01495C1F9BFE9 /* ro-RO */,
+				694DF6F47767A651907D55D4 /* ru */,
+				58C38FF9205C9B7D79C51A37 /* sk-SK */,
+				3B9A821F35B93898A7AC1ADF /* sl-SI */,
+				38F3A7D625E4B0D3506A37F6 /* sv */,
+				2192708AD201F80F6E1A39F7 /* tr */,
+				B97D91CB54F48F64CAC9E378 /* vi */,
+				3F017BF6ECE0EBE4E0DFCF9C /* zh-Hans */,
+				AF389752CCEB6FA734AAE31E /* zh-Hant */,
+				CECC1E22D0F0336039B435DE /* zh-HK */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03D567A9F86C4B204A11D604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6940D75CA36F7DB9FB56196B /* Guavapay3DS2DemoUI-Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				INFOPLIST_FILE = Guavapay3DS2DemoUI/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guavapay.Guavapay3DS2DemoUI;
+				PRODUCT_NAME = Guavapay3DS2DemoUI;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guavapay3DS2DemoUI/Sources/Guavapay3DS2DemoUI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		380615C693D7BF5A8884139A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5316D0759F7F2ED0BF1D3B2E /* Guavapay3DS2DemoUI-Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				INFOPLIST_FILE = Guavapay3DS2DemoUI/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guavapay.Guavapay3DS2DemoUI;
+				PRODUCT_NAME = Guavapay3DS2DemoUI;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guavapay3DS2DemoUI/Sources/Guavapay3DS2DemoUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		437A50F3FA4CE0127490A271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB91F58CF23E72636C69C41 /* Project-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		7C7BC68E9581B5EDB7602612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A9D36FEF7E97CF735D82B8 /* Guavapay3DS2DemoUITests-Release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				INFOPLIST_FILE = Guavapay3DS2DemoUITests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guavapay.Guavapay3DS2DemoUITests;
+				PRODUCT_NAME = Guavapay3DS2DemoUITests;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guavapay3DS2DemoUI/Sources/Guavapay3DS2DemoUI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guavapay3DS2DemoUI.app/Guavapay3DS2DemoUI";
+				TEST_TARGET_NAME = Guavapay3DS2DemoUI;
+			};
+			name = Release;
+		};
+		872D92C1EE444AB448EB744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5686FB8EFA3AE3B39F85BBC /* Guavapay3DS2Tests-Release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				INFOPLIST_FILE = Guavapay3DS2Tests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guavapay.Guavapay3DS2Tests;
+				PRODUCT_NAME = Guavapay3DS2Tests;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		8CD9CB7B7E57B44EE65EF421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8CD68A006F970DDC54469A /* Project-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A084DA5D39CBD41FD4E5294E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BC7014D26158AC9D74CC67 /* Guavapay3DS2Tests-Debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				INFOPLIST_FILE = Guavapay3DS2Tests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guavapay.Guavapay3DS2Tests;
+				PRODUCT_NAME = Guavapay3DS2Tests;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C34CBE7C8AA7B8ADB823B098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3C05BE55CF3086738AA182 /* Guavapay3DS2DemoUITests-Debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				INFOPLIST_FILE = Guavapay3DS2DemoUITests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guavapay.Guavapay3DS2DemoUITests;
+				PRODUCT_NAME = Guavapay3DS2DemoUITests;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guavapay3DS2DemoUI/Sources/Guavapay3DS2DemoUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guavapay3DS2DemoUI.app/Guavapay3DS2DemoUI";
+				TEST_TARGET_NAME = Guavapay3DS2DemoUI;
+			};
+			name = Debug;
+		};
+		D4CD9EDC1DA055683F427D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F6FFED1A0966A49B78F252 /* Guavapay3DS2-Release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				INFOPLIST_FILE = Guavapay3DS2/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guavapay.guavapay-3ds2";
+				PRODUCT_NAME = Guavapay3DS2;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCA19B8EBB1E9578613A65BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CD7EC589C5CC6CE5CF9310 /* Guavapay3DS2-Debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y96BLRW2C5;
+				INFOPLIST_FILE = Guavapay3DS2/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guavapay.guavapay-3ds2";
+				PRODUCT_NAME = Guavapay3DS2;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		271DFDD5ABBB719F3BD1AB56 /* Build configuration list for PBXNativeTarget "Guavapay3DS2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A084DA5D39CBD41FD4E5294E /* Debug */,
+				872D92C1EE444AB448EB744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37237B2A5629D2257C454AD1 /* Build configuration list for PBXNativeTarget "Guavapay3DS2DemoUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380615C693D7BF5A8884139A /* Debug */,
+				03D567A9F86C4B204A11D604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57B08C966701355644CF5CEB /* Build configuration list for PBXProject "Guavapay3DS2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD9CB7B7E57B44EE65EF421 /* Debug */,
+				437A50F3FA4CE0127490A271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C9BBB6FD4175090CFCAA126 /* Build configuration list for PBXNativeTarget "Guavapay3DS2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA19B8EBB1E9578613A65BE /* Debug */,
+				D4CD9EDC1DA055683F427D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F64A3CED17753DA2643AA63 /* Build configuration list for PBXNativeTarget "Guavapay3DS2DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34CBE7C8AA7B8ADB823B098 /* Debug */,
+				7C7BC68E9581B5EDB7602612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8528BC552DAFB568003D4C50 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		85F9416C2DDCCF7400CA54F4 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.58.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0118969F6608A92583CC6C98 /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iOSSnapshotTestCase;
+		};
+		8528BC562DAFB568003D4C50 /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528BC552DAFB568003D4C50 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+		85F9416D2DDCCFA500CA54F4 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85F9416C2DDCCF7400CA54F4 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8D219187B704575AD3CD3EC5 /* Project object */;
+}

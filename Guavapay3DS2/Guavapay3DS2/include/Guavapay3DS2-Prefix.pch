@@ -1,0 +1,11 @@
+//
+//  Guavapay3DS2-Prefix.pch
+//  Guavapay3DS2
+//
+
+#ifndef Guavapay3DS2_pch
+#define Guavapay3DS2_pch
+
+#import "GPTDSLocalizedString.h"
+
+#endif /* Guavapay3DS2_pch */

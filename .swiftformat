@@ -1,0 +1,11 @@
+--enable blankLinesBetweenImports, docComments, isEmpty, markTypes, wrapConditionalBodies, wrapEnumCases
+
+--header "\nGuavapay\nCopyright © Guavapay. All rights reserved.\n//"
+--allman false
+--guardelse same-line
+--funcattributes prev-line
+--marktypes never
+
+--exclude build, *Package.swift, **/*Mock.swift, DerivedData
+
+--disable numberFormatting, redundantType, preferForLoop, sortDeclarations, sortImports, sortTypealiases, trailingCommas, wrapMultilineConditionalAssignment, wrapMultilineStatementBraces, preferKeyPath
