@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
         self.textColor = [UIColor _gptds_labelColor];
         _borderColor = [UIColor _gptds_backgroundBrandColor] ;
         _placeholderTextColor = [UIColor _gptds_systemGray2Color];
-        _placeholderText = @"Enter your code";
+        _placeholderText = @"";
     }
     return self;
 }

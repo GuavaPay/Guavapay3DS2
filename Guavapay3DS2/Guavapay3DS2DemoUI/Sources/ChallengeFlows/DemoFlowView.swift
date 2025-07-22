@@ -149,12 +149,13 @@ final class DemoFlowView: UIView {
         containerView.addArrangedSubview(postExecuteLabel)
         containerView.addArrangedSubview(getOrderButton)
         containerView.addArrangedSubview(getOrderLabel)
-        
+
+        let scrollGuide = scrollView.contentLayoutGuide
         NSLayoutConstraint.activate([
-            containerView.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor, constant: 16),
-            containerView.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor, constant: 16),
-            containerView.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor, constant: -16),
-            containerView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor, constant: -16),
+            containerView.topAnchor.constraint(equalTo: scrollGuide.topAnchor, constant: 16),
+            containerView.leadingAnchor.constraint(equalTo: scrollGuide.leadingAnchor, constant: 16),
+            containerView.trailingAnchor.constraint(equalTo: scrollGuide.trailingAnchor, constant: -16),
+            containerView.bottomAnchor.constraint(equalTo: scrollGuide.bottomAnchor, constant: -16),
             containerView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor, constant: -32)
         ])
     }

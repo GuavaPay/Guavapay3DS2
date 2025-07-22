@@ -1,22 +1,18 @@
-//
-//  GPTDSResendButton.h
+//  GPTDSSubmitButton.h
 //  Guavapay3DS2
 //
+//  Created by Nikolai Kriuchkov on 10.07.2025.
+//
+
 
 #import <UIKit/UIKit.h>
-#import "GPTDSResendButton.h"
-#import "GPTDSButtonCustomization.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@class GPTDSButtonCustomization;
 
-@interface GPTDSResendButton : UIButton
+@interface GPTDSSubmitButton : UIButton
 
 @property (nonatomic) GPTDSButtonCustomization *customization;
 
 - (instancetype)initWithCustomization:(GPTDSButtonCustomization *)customization title:(NSString *)title;
 
-- (void)resetCounter;
-
 @end
-
-NS_ASSUME_NONNULL_END

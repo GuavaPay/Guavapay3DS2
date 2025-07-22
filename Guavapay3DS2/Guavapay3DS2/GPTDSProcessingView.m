@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) GPTDSStackView *imageStackView;
 @property (nonatomic, strong) UIView *blurViewPlaceholder;
+@property (nonatomic, strong) UIView *centerBackgroundView;
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) GPTDSProcessingSpinnerView *spinner;
 
@@ -51,12 +52,14 @@ static const CGFloat kSpinnerSize = 60;
 - (void)setShouldDisplayDSLogo:(BOOL)shouldDisplayDSLogo {
     _shouldDisplayDSLogo = shouldDisplayDSLogo;
     self.imageView.hidden = !shouldDisplayDSLogo;
+    if (shouldDisplayDSLogo) {
+        self.centerBackgroundView.backgroundColor = [UIColor _gptds_backgroundPrimaryColor];
+    } else {
+        self.centerBackgroundView.backgroundColor = UIColor.clearColor;
+    }
 }
 
 - (void)_setupViewHierarchyWithCustomization:(GPTDSUICustomization *)customization {
-    // Dark secondary background for full screen
-    self.backgroundColor = [UIColor _gptds_backgroundSecondaryColor];
-
     // Full-screen overlay
     UIView *overlayView = [[UIView alloc] init];
     overlayView.backgroundColor = [UIColor _gptds_backgroundOverlayColor];
@@ -73,6 +76,7 @@ static const CGFloat kSpinnerSize = 60;
 
     // Centered card view with primary background and corner radius
     UIView *centerView = [[UIView alloc] init];
+    self.centerBackgroundView = centerView;
     centerView.backgroundColor = [UIColor _gptds_backgroundPrimaryColor];
     centerView.layer.cornerRadius = 8;
     centerView.clipsToBounds = YES;
@@ -80,10 +84,9 @@ static const CGFloat kSpinnerSize = 60;
     [self addSubview:centerView];
 
     [NSLayoutConstraint activateConstraints:@[
-        [centerView.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
         [centerView.centerYAnchor constraintEqualToAnchor:self.centerYAnchor],
-        [centerView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:kProcessingViewHorizontalMargin],
-        [centerView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-kProcessingViewHorizontalMargin],
+        [centerView.leadingAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.leadingAnchor constant:kProcessingViewHorizontalMargin],
+        [centerView.trailingAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.trailingAnchor constant:-kProcessingViewHorizontalMargin]
     ]];
 
     // Vertical stack inside the card
@@ -110,24 +113,14 @@ static const CGFloat kSpinnerSize = 60;
 
     // Spinner (60x60, brand color)
     _spinner = [[GPTDSProcessingSpinnerView alloc] initWithFrame:CGRectMake(0,0,60,60)];
-    _spinner.spinnerColor = [UIColor _gptds_backgroundBrandColor];
+    GPTDSButtonCustomization *buttonCustomization = [customization buttonCustomizationForButtonType:GPTDSUICustomizationButtonTypeSubmit];
+    _spinner.spinnerColor = buttonCustomization.backgroundColor;
     _spinner.translatesAutoresizingMaskIntoConstraints = NO;
     [stack addArrangedSubview:_spinner];
     [NSLayoutConstraint activateConstraints:@[
         [_spinner.widthAnchor constraintEqualToConstant:kSpinnerSize],
         [_spinner.heightAnchor constraintEqualToConstant:kSpinnerSize],
     ]];
-
-    // Processing label
-    UILabel *label = [[UILabel alloc] init];
-    label.text = @"Processing...";
-    label.font = [UIFont systemFontOfSize:17 weight:UIFontWeightRegular];
-    label.translatesAutoresizingMaskIntoConstraints = NO;
-    [stack addArrangedSubview:label];
-}
-
-- (void)startSpinning {
-    [_spinner startSpinning];
 }
 
 @end

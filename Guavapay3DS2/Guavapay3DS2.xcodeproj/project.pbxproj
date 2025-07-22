@@ -141,6 +141,8 @@
 		8528BC572DAFB568003D4C50 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 8528BC562DAFB568003D4C50 /* iOSSnapshotTestCase */; };
 		8528BC592DAFB6F5003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528BC582DAFB6E9003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift */; };
 		852F7BF02DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852F7BEF2DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets */; };
+		853519692E200D120023220D /* GPTDSSubmitButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 853519682E200D0B0023220D /* GPTDSSubmitButton.h */; };
+		8535196B2E200D160023220D /* GPTDSSubmitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8535196A2E200D140023220D /* GPTDSSubmitButton.m */; };
 		85526F302DD1DFB5005DB15E /* ChallengeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85526F2F2DD1DFB5005DB15E /* ChallengeType.swift */; };
 		85742C4D2DAD65A000690F70 /* JSONDecoder+ISODate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85742C4C2DAD65A000690F70 /* JSONDecoder+ISODate.swift */; };
 		858519BF2E03126D000C6FCE /* Data+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858519BB2E031013000C6FCE /* Data+Base64.swift */; };
@@ -519,6 +521,8 @@
 		8528BC582DAFB6E9003D4C50 /* GPTDSChallengeResponseViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTDSChallengeResponseViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		8528BC5A2DAFB6F6003D4C50 /* Guavapay3DS2DemoUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guavapay3DS2DemoUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		852F7BEF2DAFDF1600A4FCD9 /* Guavapay3DS2DemoUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Guavapay3DS2DemoUI.xcassets; sourceTree = "<group>"; };
+		853519682E200D0B0023220D /* GPTDSSubmitButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSSubmitButton.h; sourceTree = "<group>"; };
+		8535196A2E200D140023220D /* GPTDSSubmitButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTDSSubmitButton.m; sourceTree = "<group>"; };
 		853A361AB630A2BD402D1B47 /* GPTDSInvalidInputException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTDSInvalidInputException.h; sourceTree = "<group>"; };
 		85526F2F2DD1DFB5005DB15E /* ChallengeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeType.swift; sourceTree = "<group>"; };
 		85742C4C2DAD65A000690F70 /* JSONDecoder+ISODate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+ISODate.swift"; sourceTree = "<group>"; };
@@ -802,6 +806,8 @@
 				51E4A57094A671EB14380882 /* GPTDSSpacerView.m */,
 				B7AE3B4732D203134FE096FE /* GPTDSStackView.h */,
 				1D6269F8B91341C387A911DB /* GPTDSStackView.m */,
+				853519682E200D0B0023220D /* GPTDSSubmitButton.h */,
+				8535196A2E200D140023220D /* GPTDSSubmitButton.m */,
 				C12AE31D386D4A193C00004B /* GPTDSSynchronousLocationManager.h */,
 				A5DBDDEB5C5DAE2EA8C95CC3 /* GPTDSSynchronousLocationManager.m */,
 				82C41E6DC2CC247ECC17F2B9 /* GPTDSTextChallengeView.h */,
@@ -1199,6 +1205,7 @@
 				2CB6DF5CCCBC1EB9ABD03143 /* GPTDSNotInitializedException.h in Headers */,
 				67D431374DECE36B2606D944 /* GPTDSProtocolErrorEvent.h in Headers */,
 				15D4A2F07EA477B84CD48B15 /* GPTDSRuntimeErrorEvent.h in Headers */,
+				853519692E200D120023220D /* GPTDSSubmitButton.h in Headers */,
 				2C6DB6516699B4EFADDF3360 /* GPTDSRuntimeException.h in Headers */,
 				F5513045A25210C524A05DF5 /* GPTDSSelectionCustomization.h in Headers */,
 				335553A547A3CA80B3901CCF /* GPTDSGuavapay3DS2Error.h in Headers */,
@@ -1613,6 +1620,7 @@
 				3C88AE37A760B91E93D423CF /* GPTDSException.m in Sources */,
 				F569B584D357DC5C55542015 /* GPTDSFooterCustomization.m in Sources */,
 				EE3854BC2A14F87E8D51B0D0 /* GPTDSInvalidInputException.m in Sources */,
+				8535196B2E200D160023220D /* GPTDSSubmitButton.m in Sources */,
 				0D3D9C95CB14A610EAAAEF6E /* GPTDSJSONEncoder.m in Sources */,
 				EEE77034728D2CFE38CC5A85 /* GPTDSLabelCustomization.m in Sources */,
 				BB379E68231A7DA62F87E628 /* GPTDSNavigationBarCustomization.m in Sources */,

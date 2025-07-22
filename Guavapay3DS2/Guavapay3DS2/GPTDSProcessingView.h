@@ -18,9 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithCustomization:(GPTDSUICustomization *)customization directoryServerLogo:(nullable UIImage *)directoryServerLogo;
 
-/// Start spinner animation
-- (void)startSpinning;
-
 @end
 
 NS_ASSUME_NONNULL_END

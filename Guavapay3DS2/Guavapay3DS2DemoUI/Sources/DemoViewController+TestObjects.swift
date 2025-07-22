@@ -19,7 +19,7 @@ extension DemoViewController {
             acsUIType: .text,
             challengeCompletionIndicator: false,
             challengeInfoHeader: "Purchase Authentication",
-            challengeInfoLabel: "Enter your code",
+            challengeInfoLabel: "Provide the required data",
             challengeInfoText: "Enter the code sent to your phone number +1 234 *** *89",
             challengeAdditionalInfoText: nil,
             showChallengeInfoTextIndicator: false,
@@ -37,6 +37,40 @@ extension DemoViewController {
             sdkTransactionID: "",
             submitAuthenticationLabel: "Confirm",
             whitelistingInfoText: whitelist ? "Would you like to add this Merchant to your whitelist?" : nil,
+            whyInfoLabel: "Learn more about authentication",
+            whyInfoText: "This is additional information about authentication. You are being provided extra information you wouldn't normally see, because you've tapped on the above label.",
+            transactionStatus: nil
+        )
+    }
+
+    static func textChallengeFailedResponse() -> GPTDSChallengeResponse {
+        GPTDSChallengeResponseObject(
+            threeDSServerTransactionID: "",
+            acsCounterACStoSDK: "",
+            acsTransactionID: "",
+            acsHTML: nil,
+            acsHTMLRefresh: nil,
+            acsUIType: .text,
+            challengeCompletionIndicator: false,
+            challengeInfoHeader: "Purchase Authentication",
+            challengeInfoLabel: "Enter your code",
+            challengeInfoText: "Enter the code sent to your phone number +1 234 *** *89",
+            challengeAdditionalInfoText: nil,
+            showChallengeInfoTextIndicator: true,
+            challengeSelectInfo: nil,
+            expandInfoLabel: "Need some help",
+            expandInfoText: "This field displays expandable information text provided by the ACS.",
+            issuerImage: issuerImage(),
+            messageExtensions: nil,
+            messageVersion: "",
+            oobAppURL: nil,
+            oobAppLabel: nil,
+            oobContinueLabel: nil,
+            paymentSystemImage: paymentImage(),
+            resendInformationLabel: "Resend code",
+            sdkTransactionID: "",
+            submitAuthenticationLabel: "Confirm",
+            whitelistingInfoText: nil,
             whyInfoLabel: "Learn more about authentication",
             whyInfoText: "This is additional information about authentication. You are being provided extra information you wouldn't normally see, because you've tapped on the above label.",
             transactionStatus: nil

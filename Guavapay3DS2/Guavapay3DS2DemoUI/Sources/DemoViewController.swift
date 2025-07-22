@@ -13,6 +13,7 @@ final class DemoViewController: UIViewController {
     private var shouldLoadSlowly: Bool = false
     private var customization: GPTDSUICustomization
     private var isDarkMode: Bool = false
+    private var textContinueState: Bool = false
     private var oobContinueState: Bool = false
 
     private let openFlowButton = UIButton(type: .system)
@@ -38,9 +39,13 @@ final class DemoViewController: UIViewController {
     private func setupUI() {
         view.backgroundColor = .systemBackground
 
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(scrollView)
+
         let containerView = GPTDSStackView(alignment: .vertical)
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(containerView)
+        scrollView.addSubview(containerView)
 
         let uiStubLabel = UILabel()
         uiStubLabel.text = "UI Stubs"
@@ -99,12 +104,28 @@ final class DemoViewController: UIViewController {
         containerView.addSpacer(15)
         containerView.addArrangedSubview(openFlowButton)
 
-        NSLayoutConstraint.activate([
-            containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            containerView.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 16),
-            containerView.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -16)
-        ])
+        NSLayoutConstraint.activate(
+            [
+                // ScrollView constraints to safe area
+                scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+                scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+                scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+                scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+                
+                // ContainerView inside scrollView content
+                containerView.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
+                containerView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
+                containerView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+                containerView.leadingAnchor.constraint(
+                    equalTo: scrollView.contentLayoutGuide.leadingAnchor,
+                    constant: 16
+                ),
+                containerView.trailingAnchor.constraint(
+                    equalTo: scrollView.contentLayoutGuide.trailingAnchor,
+                    constant: -16
+                )
+            ]
+        )
     }
 
     private func presentChallenge(for challengeResponse: GPTDSChallengeResponse) {
@@ -118,9 +139,10 @@ final class DemoViewController: UIViewController {
         challengeResponseViewController.oobDelegate = self
 
         let challengeNavController = UINavigationController(rootViewController: challengeResponseViewController)
-        challengeNavController.modalPresentationStyle = .fullScreen
+        challengeNavController.modalPresentationStyle = .overFullScreen
         navigationController?.present(challengeNavController, animated: true, completion: nil)
 
+        challengeResponseViewController.loadViewIfNeeded()
         challengeResponseViewController.setLoading()
         let delay = self.shouldLoadSlowly ? 5.0 : 0.0
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
@@ -196,7 +218,7 @@ final class DemoViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }
         let challengeNavController = UINavigationController(rootViewController: vc)
-        challengeNavController.modalPresentationStyle = .fullScreen
+        challengeNavController.modalPresentationStyle = .overFullScreen
         navigationController?.present(challengeNavController, animated: true, completion: nil)
     }
 
@@ -225,9 +247,20 @@ extension DemoViewController: GPTDSChallengeResponseViewControllerDelegate {
         didSubmitInput userInput: String,
         whitelistSelection: GPTDSChallengeResponseSelectionInfo
     ) {
-        viewController.dismiss()
         let message = "Input Submitted: \(userInput)"
         showSnackbar(message)
+
+        viewController.setLoading()
+
+        textContinueState.toggle()
+        if textContinueState {
+            viewController.setChallengeResponse(Self.textChallengeFailedResponse(), animated: true)
+        } else {
+            viewController.setChallengeResponse(
+                Self.textChallengeResponse(withWhitelist: false, resendCode: false),
+                animated: true
+            )
+        }
     }
 
     func challengeResponseViewController(

@@ -211,7 +211,7 @@ NS_ASSUME_NONNULL_BEGIN
                                      timeout:timeout
                            presentationBlock:^(UIViewController * _Nonnull challengeVC, void (^completion)(void)) {
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:challengeVC];
-        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+        navigationController.modalPresentationStyle = UIModalPresentationOverFullScreen;
 
         [presentingViewController presentViewController:navigationController animated:YES completion:^{
             completion();

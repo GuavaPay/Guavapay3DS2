@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The color of the placeholder text. Defaults to light gray.
 @property (nonatomic) UIColor *placeholderTextColor;
 
-/// The text for the placeholder. Defaults is `Enter your code`.
+/// The text for the placeholder. Default is empty.
 @property (nonatomic) NSString *placeholderText;
 
 @end

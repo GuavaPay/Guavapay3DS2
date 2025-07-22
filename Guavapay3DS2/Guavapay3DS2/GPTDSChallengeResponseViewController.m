@@ -19,12 +19,12 @@
 #import "GPTDSExpandableInformationView.h"
 #import "GPTDSWebView.h"
 #import "GPTDSProcessingView.h"
+#import "GPTDSSubmitButton.h"
 #import "GPTDSResendButton.h"
 #import "GPTDSErrorBannerView.h"
 #import "UIView+LayoutSupport.h"
 #import "NSString+EmptyChecking.h"
 #import "UIColor+DefaultColors.h"
-#import "UIButton+CustomInitialization.h"
 #import "UIFont+DefaultFonts.h"
 #import "UIViewController+Guavapay3DS2.h"
 #import "include/GPTDSAnalyticsDelegate.h"
@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) UIScrollView *scrollView;
 @property (nonatomic, strong, nullable) GPTDSWebView *webView;
 @property (nonatomic, strong, nullable) GPTDSChallengeInformationView *challengeInformationView;
-@property (nonatomic, strong) GPTDSStackView *bottomStackView;
+@property (nonatomic, strong) GPTDSStackView *expandableBottomStackView;
 @property (nonatomic, strong) UITapGestureRecognizer *tapOutsideKeyboardGestureRecognizer;
 
 // User input views
@@ -65,7 +65,7 @@ static const NSTimeInterval kDefaultTransitionAnimationDuration = 0.3;
 static const CGFloat kBrandingViewHeight = 64;
 static const CGFloat kContentHorizontalInset = 16;
 static const CGFloat kContentVerticalInset = 16;
-static const CGFloat kExpandableContentHorizontalInset = 27;
+static const CGFloat kExpandableContentHorizontalInset = 11;
 static const CGFloat kContentViewTopPadding = 0;
 static const CGFloat kContentViewBottomPadding = 26;
 static const CGFloat kExpandableContentViewSpacing = 8;
@@ -92,7 +92,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self _gptds_setupNavigationBarElementsWithCustomization:_uiCustomization cancelButtonSelector:@selector(_cancelButtonTapped:)];
-    self.view.backgroundColor = self.uiCustomization.backgroundColor;
+    self.view.backgroundColor = [UIColor _gptds_backgroundOverlayColor];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
@@ -192,7 +192,6 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     if (isLoading) {
         [self.view bringSubviewToFront:self.processingView];
         self.processingView.hidden = NO;
-        [self.processingView startSpinning];
 
         self.loadingStartDate = [NSDate date];
         UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, GPTDSLocalizedString(@"Loading", @"Spoken by VoiceOver when the challenge is loading."));
@@ -209,18 +208,28 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
 }
 
 - (void)_setupViewHierarchy {
+    self.view.backgroundColor = self.uiCustomization.backgroundColor;
+
     self.scrollView = [[UIScrollView alloc] init];
-    self.scrollView.backgroundColor = self.uiCustomization.footerCustomization.backgroundColor;
+    self.scrollView.backgroundColor = self.uiCustomization.backgroundColor;
     self.scrollView.alwaysBounceVertical = YES;
+    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.scrollView];
+    [NSLayoutConstraint activateConstraints:@[
+        [self.scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
+        [self.scrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
+        [self.scrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
+        [self.scrollView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor]
+    ]];
 
     GPTDSStackView *containerStackView = [[GPTDSStackView alloc] initWithAlignment:GPTDSStackViewLayoutAxisVertical];
+    containerStackView.backgroundColor = UIColor.clearColor;
     [self.scrollView addSubview:containerStackView];
     [containerStackView _gptds_pinToSuperviewBoundsWithoutMargin];
 
     UIView *contentView = [UIView new];
     contentView.layoutMargins = UIEdgeInsetsMake(kContentViewTopPadding, kContentHorizontalInset, kContentViewBottomPadding, kContentHorizontalInset);
-    contentView.backgroundColor = self.uiCustomization.backgroundColor;
+    contentView.backgroundColor = UIColor.clearColor;
     [containerStackView addArrangedSubview:contentView];
 
     GPTDSStackView *contentStackView = [[GPTDSStackView alloc] initWithAlignment:GPTDSStackViewLayoutAxisVertical];
@@ -276,40 +285,33 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     GPTDSExpandableInformationView *whyInformationView = [self _newConfiguredWhyInformationView];
     GPTDSExpandableInformationView *expandableInformationView = [self _newConfiguredExpandableInformationView];
 
-    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.bottomStackView removeFromSuperview];
-    self.bottomStackView = [[GPTDSStackView alloc] initWithAlignment:GPTDSStackViewLayoutAxisVertical];
-    self.bottomStackView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:self.bottomStackView];
+    [self.expandableBottomStackView removeFromSuperview];
+    self.expandableBottomStackView = [[GPTDSStackView alloc] initWithAlignment:GPTDSStackViewLayoutAxisVertical];
+    self.expandableBottomStackView.backgroundColor = self.uiCustomization.footerCustomization.backgroundColor;
+    self.expandableBottomStackView.translatesAutoresizingMaskIntoConstraints = NO;
 
-    // Constrain scrollView with fallback when bottomStackView is empty
-    NSLayoutConstraint *scrollBottomToStack = [self.scrollView.bottomAnchor constraintEqualToAnchor:_bottomStackView.topAnchor];
-    scrollBottomToStack.priority = UILayoutPriorityDefaultHigh;
-    NSLayoutConstraint *scrollBottomToSafeArea = [self.scrollView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor];
-    scrollBottomToSafeArea.priority = UILayoutPriorityDefaultLow;
-    [NSLayoutConstraint activateConstraints:@[
-        [self.scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
-        [self.scrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
-        [self.scrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
-        scrollBottomToStack,
-        scrollBottomToSafeArea
-    ]];
+    UIView *expandableBottomContainerView = [UIView new];
+    [contentStackView addSpacer:36];
+    [contentStackView addArrangedSubview:expandableBottomContainerView];
+    [expandableBottomContainerView addSubview:self.expandableBottomStackView];
 
     // Wrap why and expandable information views in a vertical stack
     whyInformationView.translatesAutoresizingMaskIntoConstraints = NO;
     expandableInformationView.translatesAutoresizingMaskIntoConstraints = NO;
 
-    [self.bottomStackView addArrangedSubview:whyInformationView];
+    [self.expandableBottomStackView addArrangedSubview:whyInformationView];
     if (!expandableInformationView.isHidden && !whyInformationView.isHidden) {
-        [self.bottomStackView addSpacer:kExpandableContentViewSpacing];
-        [self.bottomStackView addLine:-12];
-        [self.bottomStackView addSpacer:kExpandableContentViewSpacing];
+        [self.expandableBottomStackView addSpacer:kExpandableContentViewSpacing];
+        [self.expandableBottomStackView addLine:-11];
+        [self.expandableBottomStackView addSpacer:kExpandableContentViewSpacing];
     }
-    [self.bottomStackView addArrangedSubview:expandableInformationView];
+    [self.expandableBottomStackView addArrangedSubview:expandableInformationView];
+
     [NSLayoutConstraint activateConstraints:@[
-        [self.bottomStackView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:kExpandableContentHorizontalInset],
-        [self.bottomStackView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-kExpandableContentHorizontalInset],
-        [self.bottomStackView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor]
+        [self.expandableBottomStackView.topAnchor constraintEqualToAnchor:expandableBottomContainerView.topAnchor],
+        [self.expandableBottomStackView.bottomAnchor constraintEqualToAnchor:expandableBottomContainerView.bottomAnchor],
+        [self.expandableBottomStackView.leadingAnchor constraintEqualToAnchor:expandableBottomContainerView.leadingAnchor constant:kExpandableContentHorizontalInset],
+        [self.expandableBottomStackView.trailingAnchor constraintEqualToAnchor:expandableBottomContainerView.trailingAnchor constant:-kExpandableContentHorizontalInset]
     ]];
 
     [self _loadBrandingViewImages:brandingView];
@@ -403,9 +405,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     GPTDSChallengeInformationView *challengeInformationView = [[GPTDSChallengeInformationView alloc] init];
     challengeInformationView.headerText = self.response.challengeInfoHeader;
     challengeInformationView.challengeInformationText = self.response.challengeInfoText;
-    if (self.response.acsUIType != GPTDSACSUITypeText) {
-        challengeInformationView.challengeInformationLabel = self.response.challengeInfoLabel;
-    }
+    challengeInformationView.challengeInformationLabel = self.response.challengeInfoLabel;
     challengeInformationView.labelCustomization = self.uiCustomization.labelCustomization;
 
     if (self.response.showChallengeInfoTextIndicator) {
@@ -419,12 +419,9 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     GPTDSTextChallengeView *textChallengeView = [[GPTDSTextChallengeView alloc] init];
     textChallengeView.hidden = self.response.acsUIType != GPTDSACSUITypeText;
     GPTDSTextFieldCustomization *uiCustomization = self.uiCustomization.textFieldCustomization;
-    if (self.response.challengeInfoLabel) {
-        uiCustomization.placeholderText = self.response.challengeInfoLabel;
-    }
     textChallengeView.textFieldCustomization = uiCustomization;
     textChallengeView.textField.accessibilityLabel = self.response.challengeInfoLabel;
-    textChallengeView.backgroundColor = self.uiCustomization.backgroundColor;
+    textChallengeView.backgroundColor = UIColor.clearColor;
 
     return textChallengeView;
 }
@@ -435,7 +432,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     challengeSelectionView.hidden = self.response.acsUIType != GPTDSACSUITypeSingleSelect && self.response.acsUIType != GPTDSACSUITypeMultiSelect;
     challengeSelectionView.labelCustomization = self.uiCustomization.labelCustomization;
     challengeSelectionView.selectionCustomization = self.uiCustomization.selectionCustomization;
-    challengeSelectionView.backgroundColor = self.uiCustomization.backgroundColor;
+    challengeSelectionView.backgroundColor = UIColor.clearColor;
 
     return challengeSelectionView;
 }
@@ -469,7 +466,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     }
 
     GPTDSButtonCustomization *buttonCustomization = [self.uiCustomization buttonCustomizationForButtonType:buttonType];
-    UIButton *actionButton = [UIButton _gptds_buttonWithTitle:buttonTitle customization:buttonCustomization];
+    GPTDSSubmitButton *actionButton = [[GPTDSSubmitButton alloc] initWithCustomization:buttonCustomization title:buttonTitle];
     if (oobOpenApp) {
         [actionButton addTarget:self action:@selector(_oobButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     } else {
@@ -488,6 +485,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     GPTDSResendButton *resendButton = [[GPTDSResendButton alloc] initWithCustomization:buttonCustomization title:resendButtonTitle];
 
     resendButton.hidden = resendButtonTitle == nil || [NSString _gptds_isStringEmpty:resendButtonTitle];
+    resendButton.accessibilityIdentifier = @"Resend code";
     [resendButton addTarget:self action:@selector(_resendButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 
     return resendButton;
@@ -510,7 +508,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     whyInformationView.text = self.response.whyInfoText;
     whyInformationView.customization = self.uiCustomization.footerCustomization;
     whyInformationView.hidden = whyInformationView.title == nil;
-    whyInformationView.backgroundColor = self.uiCustomization.footerCustomization.backgroundColor;
+    whyInformationView.backgroundColor = UIColor.clearColor;
     __weak typeof(self) weakSelf = self;
     whyInformationView.didTap = ^{
         [weakSelf.textChallengeView endEditing:NO];
@@ -526,7 +524,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     expandableInformationView.text = self.response.expandInfoText;
     expandableInformationView.customization = self.uiCustomization.footerCustomization;
     expandableInformationView.hidden = expandableInformationView.title == nil;
-    expandableInformationView.backgroundColor = self.uiCustomization.footerCustomization.backgroundColor;
+    expandableInformationView.backgroundColor = UIColor.clearColor;
     __weak typeof(self) weakSelf = self;
     expandableInformationView.didTap = ^{
         [weakSelf.textChallengeView endEditing:NO];
@@ -538,7 +536,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
 - (UIStackView *)_newSubmitButtonStackView {
     UIStackView *stackView = [[UIStackView alloc] init];
     stackView.axis = UILayoutConstraintAxisVertical;
-    stackView.distribution = UIStackViewDistributionFillEqually;
+    stackView.distribution = UIStackViewDistributionFillProportionally;
     stackView.alignment = UIStackViewAlignmentFill;
     stackView.spacing = 12;
     stackView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -547,6 +545,7 @@ static NSString * const kHTMLStringLoadingURL = @"about:blank";
     CGSize size = [UIScreen mainScreen].bounds.size;
     if (size.width > size.height) {
         // hack to detect landscape
+        stackView.distribution = UIStackViewDistributionFillEqually;
         stackView.axis = UILayoutConstraintAxisHorizontal;
         stackView.alignment = UIStackViewAlignmentCenter;
     }

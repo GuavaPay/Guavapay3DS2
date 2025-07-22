@@ -464,7 +464,7 @@ final class DemoFlowViewController: UIViewController {
                 do {
                     let response = try JSONDecoder.isoDateDecoder.decode(CompletedDTO.self, from: data)
                     DispatchQueue.main.async {
-                        self?.handleURL(response.redirectUrl)
+                        self?.contentView.postExecuteLabel.text = "redirectUrl: \(response.redirectUrl)"
                     }
                 } catch {
                     self?.showError(.decodingError(error), source: .postExecute)

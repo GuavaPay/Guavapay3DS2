@@ -64,7 +64,7 @@
     return [UIColor _gptds_colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traitCollection) {
         return (traitCollection.userInterfaceStyle == UIUserInterfaceStyleLight)
         ? [UIColor colorWithRed:(CGFloat)(0.0 / 255.0) green:(CGFloat)(0.0 / 255.0) blue:(CGFloat)(0.0 / 255.0) alpha:0.4]
-        : [UIColor colorWithRed:(CGFloat)(255.0 / 255.0) green:(CGFloat)(255.0 / 255.0) blue:(CGFloat)(255.0 / 255.0) alpha:0.08];
+        : [UIColor colorWithRed:(CGFloat)(0.0 / 255.0) green:(CGFloat)(0.0 / 255.0) blue:(CGFloat)(0.0 / 255.0) alpha:0.64];
     }];
 }
 
